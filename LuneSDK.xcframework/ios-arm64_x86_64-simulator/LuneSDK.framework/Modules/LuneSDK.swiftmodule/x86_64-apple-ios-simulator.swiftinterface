@@ -1,0 +1,881 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name LuneSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Charts
+import Combine
+import DeveloperToolsSupport
+import Foundation
+@_exported import LuneSDK
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _PhotosUI_SwiftUI
+import _StringProcessing
+import _SwiftConcurrencyShims
+extension LuneSDK.LuneField {
+  public struct ValueState {
+  }
+}
+extension LuneSDK.LuneField {
+  public struct FocusState {
+  }
+}
+extension LuneSDK.LuneField {
+  public struct Configuration {
+    public init() where UITextFieldType == LuneSDK.BaseLuneField
+    public init(_ makeUITextField: @escaping () -> UITextFieldType)
+  }
+}
+extension LuneSDK.LuneField.Configuration {
+  public func value(updateViewValue: @escaping (_ textField: UITextFieldType) -> Swift.Void, onViewValueChanged: @escaping (_ textField: UITextFieldType) -> Swift.Void) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func value(text: SwiftUI.Binding<Swift.String>) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func value(text: SwiftUI.Binding<Swift.String>, onFieldValueChanged: ((_ textField: UITextFieldType) -> Swift.Void)?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  @available(iOS 15.0, *)
+  public func value<F>(value: SwiftUI.Binding<F.FormatInput>, format: F) -> LuneSDK.LuneField<UITextFieldType>.Configuration where F : Foundation.ParseableFormatStyle, F.FormatOutput == Swift.String
+  @available(iOS 15.0, *)
+  public func value<F>(value: SwiftUI.Binding<F.FormatInput?>, format: F) -> LuneSDK.LuneField<UITextFieldType>.Configuration where F : Foundation.ParseableFormatStyle, F.FormatOutput == Swift.String
+  public func value<V>(value: SwiftUI.Binding<V>, formatter: Foundation.Formatter) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func value<V>(value: SwiftUI.Binding<V?>, formatter: Foundation.Formatter) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func allowEmoji(_ shouldAllow: Swift.Bool?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func placeholder(_ placeholder: Swift.String?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func font(_ font: UIKit.UIFont?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func textColor(_ color: SwiftUI.Color?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func textAlignment(_ textAlignment: UIKit.NSTextAlignment?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func clearsOnBeginEditing(_ clearsOnBeginEditing: Swift.Bool?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func clearsOnInsertion(_ clearsOnInsertion: Swift.Bool?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func clearButtonMode(_ clearButtonMode: UIKit.UITextField.ViewMode?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func focused(_ binding: SwiftUI.Binding<Swift.Bool>) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func focused<Value>(_ binding: SwiftUI.Binding<Value?>, equals value: Value?) -> LuneSDK.LuneField<UITextFieldType>.Configuration where Value : Swift.Hashable
+  public func stretches(horizontal: Swift.Bool, vertical: Swift.Bool) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func inputView(content: LuneSDK.LuneInputViewContent<UITextFieldType>) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func inputAccessoryView(content: LuneSDK.LuneInputViewContent<UITextFieldType>) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+}
+extension LuneSDK.LuneField.Configuration {
+  public func configure(handler: @escaping (_ uiTextField: UITextFieldType) -> Swift.Void) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+}
+extension LuneSDK.LuneField.Configuration {
+  public func shouldBeginEditing(handler: @escaping (_ uiTextField: UITextFieldType) -> Swift.Bool) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func onBeganEditing(handler: @escaping (_ uiTextField: UITextFieldType) -> Swift.Void) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func shouldEndEditing(handler: @escaping (_ uiTextField: UITextFieldType) -> Swift.Bool) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func onEndedEditing(handler: @escaping (_ uiTextField: UITextFieldType, _ reason: UIKit.UITextField.DidEndEditingReason) -> Swift.Void) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func shouldChangeCharacters(handler: @escaping (_ uiTextField: UITextFieldType, _ range: Foundation.NSRange, _ replacementString: Swift.String) -> Swift.Bool) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func onChangedSelection(handler: @escaping (_ uiTextField: UITextFieldType) -> Swift.Void) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func shouldClear(handler: @escaping (_ uiTextField: UITextFieldType) -> Swift.Bool) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func shouldReturn(handler: @escaping (_ uiTextField: UITextFieldType) -> Swift.Bool) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+}
+public struct LuneConfig : Swift.Codable {
+  public static let defaultValue: LuneSDK.LuneConfig
+  public func bg(_ colorScheme: SwiftUI.ColorScheme) -> SwiftUI.Color
+  public func fg(_ colorScheme: SwiftUI.ColorScheme) -> SwiftUI.Color
+  public func cardBg(_ colorScheme: SwiftUI.ColorScheme) -> SwiftUI.Color
+  public func cardFg(_ colorScheme: SwiftUI.ColorScheme) -> SwiftUI.Color
+  public func primaryColor(_ colorScheme: SwiftUI.ColorScheme) -> SwiftUI.Color
+  public func secondaryColor(_ colorScheme: SwiftUI.ColorScheme) -> SwiftUI.Color
+  public func accentColor(_ colorScheme: SwiftUI.ColorScheme) -> SwiftUI.Color
+  public func iconButtonBg(_ colorScheme: SwiftUI.ColorScheme) -> SwiftUI.Color
+  public init(colorTheme: LuneSDK.ColorTheme? = nil, darkTheme: LuneSDK.ColorTheme? = nil, borderRadius: Swift.Double? = nil, verticalPadding: Swift.Double? = nil, fontConfig: LuneSDK.FontConfig? = nil, buttonTheme: LuneSDK.ButtonTheme? = nil, textfieldTheme: LuneSDK.TextFieldTheme? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension LuneSDK.LuneConfig {
+  public init(data: Foundation.Data) throws
+  public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
+  public init(fromURL url: Foundation.URL) throws
+  public func with(colorTheme: LuneSDK.ColorTheme? = nil, darkTheme: LuneSDK.ColorTheme? = nil, borderRadius: Swift.Double? = nil, verticalPadding: Swift.Double? = nil, fontConfig: LuneSDK.FontConfig? = nil, buttonTheme: LuneSDK.ButtonTheme? = nil, textfieldTheme: LuneSDK.TextFieldTheme? = nil) -> LuneSDK.LuneConfig
+  public func with(_ config: LuneSDK.LuneConfig?) -> LuneSDK.LuneConfig
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+  public func getFont(_ size: CoreFoundation.CGFloat, weight: SwiftUI.Font.Weight = .regular, design: SwiftUI.Font.Design = .default) -> SwiftUI.Font
+}
+public enum SaveFrequency : Swift.String, Swift.Codable, Swift.CodingKey, Swift.Hashable, Swift.CaseIterable {
+  case monthly
+  case weekly
+  public init?(rawValue: Swift.String)
+  public init?(stringValue: Swift.String)
+  public init?(intValue: Swift.Int)
+  public typealias AllCases = [LuneSDK.SaveFrequency]
+  public typealias RawValue = Swift.String
+  public static var allCases: [LuneSDK.SaveFrequency] {
+    get
+  }
+  public var intValue: Swift.Int? {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+  public var stringValue: Swift.String {
+    get
+  }
+}
+public struct BudgetUpdate : Swift.Codable, Swift.Equatable {
+  public var count: Swift.Int {
+    get
+  }
+  public static func == (a: LuneSDK.BudgetUpdate, b: LuneSDK.BudgetUpdate) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension LuneSDK.BudgetUpdate {
+  public init(data: Foundation.Data) throws
+  public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
+  public init(fromURL url: Foundation.URL) throws
+  public func with(budget: [LuneSDK.CategoryBudget]? = nil) -> LuneSDK.BudgetUpdate
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+  public func toMap() -> [Swift.String : Any]
+}
+@_Concurrency.MainActor(unsafe) public struct BrandListViewImpl {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7LuneSDK17BrandListViewImplV4bodyQrvp", 0) __
+}
+public struct TagField : SwiftUI.View {
+  @SwiftUI.Binding @_projectedValueProperty($tags) public var tags: [Swift.String] {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating _modify
+  }
+  public var $tags: SwiftUI.Binding<[Swift.String]> {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7LuneSDK8TagFieldV4bodyQrvp", 0) __
+}
+extension LuneSDK.TagField {
+  public func lowercase(_ bool: Swift.Bool) -> LuneSDK.TagField
+}
+@available(iOS 13, macOS 11, *)
+public struct AlertToast : SwiftUI.View {
+  public enum BannerAnimation {
+    case slide, pop
+    public static func == (a: LuneSDK.AlertToast.BannerAnimation, b: LuneSDK.AlertToast.BannerAnimation) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum DisplayMode : Swift.Equatable {
+    case alert
+    case hud
+    case banner(_: LuneSDK.AlertToast.BannerAnimation)
+    public static func == (a: LuneSDK.AlertToast.DisplayMode, b: LuneSDK.AlertToast.DisplayMode) -> Swift.Bool
+  }
+  public enum AlertType : Swift.Equatable {
+    case complete(_: SwiftUI.Color)
+    case error(_: SwiftUI.Color)
+    case systemImage(_: Swift.String, _: SwiftUI.Color)
+    case image(_: Swift.String, _: SwiftUI.Color)
+    case loading
+    case regular
+    public static func == (a: LuneSDK.AlertToast.AlertType, b: LuneSDK.AlertToast.AlertType) -> Swift.Bool
+  }
+  public enum AlertStyle : Swift.Equatable {
+    case style(backgroundColor: SwiftUI.Color? = nil, titleColor: SwiftUI.Color? = nil, subTitleColor: SwiftUI.Color? = nil, titleFont: SwiftUI.Font? = nil, subTitleFont: SwiftUI.Font? = nil, borderRadius: Swift.Double? = nil)
+    public static func == (a: LuneSDK.AlertToast.AlertStyle, b: LuneSDK.AlertToast.AlertStyle) -> Swift.Bool
+  }
+  public var displayMode: LuneSDK.AlertToast.DisplayMode
+  public var type: LuneSDK.AlertToast.AlertType
+  public var title: Swift.String?
+  public var subTitle: Swift.String?
+  public var style: LuneSDK.AlertToast.AlertStyle?
+  public init(displayMode: LuneSDK.AlertToast.DisplayMode = .alert, type: LuneSDK.AlertToast.AlertType, title: Swift.String? = nil, subTitle: Swift.String? = nil, style: LuneSDK.AlertToast.AlertStyle? = nil)
+  public init(displayMode: LuneSDK.AlertToast.DisplayMode, type: LuneSDK.AlertToast.AlertType, title: Swift.String? = nil)
+  public var banner: some SwiftUI.View {
+    get
+  }
+  public var hud: some SwiftUI.View {
+    get
+  }
+  public var alert: some SwiftUI.View {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7LuneSDK10AlertToastV4bodyQrvp", 0) __
+}
+@available(iOS 13, macOS 11, *)
+public struct AlertToastModifier : SwiftUI.ViewModifier {
+  public func main() -> some SwiftUI.View
+  
+  @_Concurrency.MainActor(unsafe) public func body(content: LuneSDK.AlertToastModifier.Content) -> some SwiftUI.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s7LuneSDK18AlertToastModifierV4body7contentQr7SwiftUI05_ViewE8_ContentVyACG_tF", 0) __
+}
+extension SwiftUI.View {
+  public func toast(isPresenting: SwiftUI.Binding<Swift.Bool>, duration: Swift.Double = 2, tapToDismiss: Swift.Bool = true, offsetY: CoreFoundation.CGFloat = 0, alert: @escaping () -> LuneSDK.AlertToast, onTap: (() -> ())? = nil, completion: (() -> ())? = nil) -> some SwiftUI.View
+  
+}
+@propertyWrapper @_Concurrency.MainActor(unsafe) public struct StateObject<ObjectType> : SwiftUI.DynamicProperty where ObjectType : Combine.ObservableObject, ObjectType.ObjectWillChangePublisher == Combine.ObservableObjectPublisher {
+  @_Concurrency.MainActor(unsafe) public var wrappedValue: ObjectType {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public var projectedValue: SwiftUI.ObservedObject<ObjectType>.Wrapper {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public init(wrappedValue thunk: @autoclosure @escaping () -> ObjectType)
+  @_Concurrency.MainActor(unsafe) public mutating func update()
+}
+public struct BottomSheet<Content> : SwiftUI.View where Content : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7LuneSDK11BottomSheetV4bodyQrvp", 0) __<Content>
+}
+@objc public class LuneSDKObjcManager : ObjectiveC.NSObject, Combine.ObservableObject {
+  @objc public init(baseUrl: Swift.String = "https://staging.pfm.lunedata.io/api", token: Swift.String, customerId: Swift.String, localizationTableName: Swift.String? = nil)
+  @objc public func CategorySpendChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil) -> UIKit.UIViewController
+  @objc public func BrandListComponent() -> UIKit.UIViewController
+  @objc public func TransactionListComponent() -> UIKit.UIViewController
+  @objc public func BudgetFormComponent() -> UIKit.UIViewController
+  @objc public func BudgetComponent() -> UIKit.UIViewController
+  @objc public func CashflowComponent() -> UIKit.UIViewController
+  @objc public func CashflowChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil) -> UIKit.UIViewController
+  @objc public func CategoryTrendChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil) -> UIKit.UIViewController
+  @objc public func BrandTrendChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil) -> UIKit.UIViewController
+  @objc public func CategorySpendListComponent() -> UIKit.UIViewController
+  @objc public func TransactionDetailComponent(id: Swift.String, withNotes: Swift.Bool = true) -> UIKit.UIViewController
+  @objc public func BrandTrendsComponent() -> UIKit.UIViewController
+  @objc public func CategoryTrendsComponent() -> UIKit.UIViewController
+  @objc public func ExpenseComponent() -> UIKit.UIViewController
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public struct BudgetBar : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7LuneSDK9BudgetBarV4bodyQrvp", 0) __
+}
+extension LuneSDK.LuneField {
+  @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class Coordinator : ObjectiveC.NSObject, UIKit.UITextFieldDelegate {
+    @_Concurrency.MainActor(unsafe) @objc public func textFieldShouldBeginEditing(_: UIKit.UITextField) -> Swift.Bool
+    @_Concurrency.MainActor(unsafe) @objc public func textFieldDidBeginEditing(_: UIKit.UITextField)
+    @_Concurrency.MainActor(unsafe) @objc public func textFieldShouldEndEditing(_: UIKit.UITextField) -> Swift.Bool
+    @_Concurrency.MainActor(unsafe) @objc public func textFieldDidEndEditing(_: UIKit.UITextField, reason: UIKit.UITextField.DidEndEditingReason)
+    @_Concurrency.MainActor(unsafe) @objc public func textField(_: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString: Swift.String) -> Swift.Bool
+    @_Concurrency.MainActor(unsafe) @objc public func textFieldDidChangeSelection(_: UIKit.UITextField)
+    @_Concurrency.MainActor(unsafe) @objc public func textFieldShouldClear(_: UIKit.UITextField) -> Swift.Bool
+    @_Concurrency.MainActor(unsafe) @objc public func textFieldShouldReturn(_: UIKit.UITextField) -> Swift.Bool
+    @objc deinit
+  }
+}
+public struct CategorySpend : Swift.Codable, Swift.Equatable, Swift.Identifiable {
+  public let count: Swift.Int
+  public let amount: Swift.Double
+  public var id: Swift.String {
+    get
+  }
+  public static func == (a: LuneSDK.CategorySpend, b: LuneSDK.CategorySpend) -> Swift.Bool
+  public typealias ID = Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension LuneSDK.CategorySpend {
+  public init(data: Foundation.Data) throws
+  public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
+  public init(fromURL url: Foundation.URL) throws
+  public func with(categoryID: Swift.String? = nil, categoryDesc: Swift.String? = nil, count: Swift.Int? = nil, amount: Swift.Double? = nil, category: LuneSDK.Category? = nil) -> LuneSDK.CategorySpend
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+}
+public enum SavingAllocationType : Swift.String, Swift.Codable, Swift.CodingKey, Swift.Hashable, Swift.CaseIterable {
+  case equal
+  case percentage
+  public init?(rawValue: Swift.String)
+  public init?(stringValue: Swift.String)
+  public init?(intValue: Swift.Int)
+  public typealias AllCases = [LuneSDK.SavingAllocationType]
+  public typealias RawValue = Swift.String
+  public static var allCases: [LuneSDK.SavingAllocationType] {
+    get
+  }
+  public var intValue: Swift.Int? {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+  public var stringValue: Swift.String {
+    get
+  }
+}
+public struct ButtonTheme : Swift.Codable {
+  public enum LuneButtonType : Swift.String, Swift.Codable, Swift.CodingKey, Swift.Hashable, Swift.CaseIterable {
+    case regular
+    case bevel
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias AllCases = [LuneSDK.ButtonTheme.LuneButtonType]
+    public typealias RawValue = Swift.String
+    public static var allCases: [LuneSDK.ButtonTheme.LuneButtonType] {
+      get
+    }
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public static let defaultValue: LuneSDK.ButtonTheme
+  public init(type: LuneSDK.ButtonTheme.LuneButtonType? = nil, borderRadius: Swift.Double? = nil, strokeWidth: Swift.Double? = nil, outlined: Swift.Bool? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension LuneSDK.ButtonTheme {
+  public init(data: Foundation.Data) throws
+  public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
+  public init(fromURL url: Foundation.URL) throws
+  public func with(type: LuneSDK.ButtonTheme.LuneButtonType? = nil, borderRadius: Swift.Double? = nil, strokeWidth: Swift.Double? = nil, outlined: Swift.Bool? = nil) -> LuneSDK.ButtonTheme
+  public func with(_ theme: LuneSDK.ButtonTheme?) -> LuneSDK.ButtonTheme
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+}
+public struct LuneResponse<T> : Swift.Codable where T : Swift.Decodable, T : Swift.Encodable {
+  public var data: T?
+  public let message: Swift.String
+  public var next: Swift.String?
+  public var previous: Swift.String?
+  public var count: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension LuneSDK.LuneResponse {
+  public init(data: Foundation.Data) throws
+  public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
+  public init(fromURL url: Foundation.URL) throws
+  public func with(data: T? = nil, message: Swift.String? = nil, next: Swift.String? = nil, previous: Swift.String? = nil, count: Swift.Int? = nil) -> LuneSDK.LuneResponse<T>
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+}
+public struct CategoryBudgetSpend : Swift.Codable, Swift.Equatable, Swift.Hashable, Swift.Identifiable {
+  public var id: Swift.String {
+    get
+  }
+  public static func == (a: LuneSDK.CategoryBudgetSpend, b: LuneSDK.CategoryBudgetSpend) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias ID = Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension LuneSDK.CategoryBudgetSpend {
+  public init(data: Foundation.Data) throws
+  public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
+  public init(fromURL url: Foundation.URL) throws
+  public func with(categoryID: Swift.String? = nil, categoryDesc: Swift.String? = nil, budgetedAmount: Swift.Double? = nil, spentAmount: Swift.Double? = nil, transactionsCount: Swift.Int? = nil, category: LuneSDK.Category? = nil) -> LuneSDK.CategoryBudgetSpend
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+}
+public struct SVGView : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7LuneSDK7SVGViewV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor(unsafe) public struct TransactionListViewImpl {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7LuneSDK23TransactionListViewImplV4bodyQrvp", 0) __
+}
+public struct LuneTokenResponse : Swift.Codable {
+  public let refresh: Swift.String?
+  public let access: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension LuneSDK.LuneTokenResponse {
+  public init(data: Foundation.Data) throws
+  public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
+  public init(fromURL url: Foundation.URL) throws
+  public func with(refresh: Swift.String? = nil, access: Swift.String? = nil) -> LuneSDK.LuneTokenResponse
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+}
+public enum GoalSettingStage : Swift.String, Swift.Codable, Swift.CodingKey, Swift.Hashable, Swift.CaseIterable {
+  case type
+  case plan
+  case summary
+  case feedback
+  public init?(rawValue: Swift.String)
+  public init?(stringValue: Swift.String)
+  public init?(intValue: Swift.Int)
+  public typealias AllCases = [LuneSDK.GoalSettingStage]
+  public typealias RawValue = Swift.String
+  public static var allCases: [LuneSDK.GoalSettingStage] {
+    get
+  }
+  public var intValue: Swift.Int? {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+  public var stringValue: Swift.String {
+    get
+  }
+}
+public struct ColorTheme : Swift.Codable {
+  public static let defaultValue: LuneSDK.ColorTheme
+  public static let defaultDarkValue: LuneSDK.ColorTheme
+  public init(primary: Swift.String? = nil, secondary: Swift.String? = nil, background: Swift.String? = nil, foreground: Swift.String? = nil, cardBackground: Swift.String? = nil, cardForeground: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension LuneSDK.ColorTheme {
+  public init(data: Foundation.Data) throws
+  public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
+  public init(fromURL url: Foundation.URL) throws
+  public func with(primary: Swift.String? = nil, secondary: Swift.String? = nil, background: Swift.String? = nil, foreground: Swift.String? = nil, cardBackground: Swift.String? = nil, cardForeground: Swift.String? = nil) -> LuneSDK.ColorTheme
+  public func with(_ theme: LuneSDK.ColorTheme?) -> LuneSDK.ColorTheme
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+}
+public struct Cashflow : Swift.Codable, Swift.Equatable {
+  public static func == (a: LuneSDK.Cashflow, b: LuneSDK.Cashflow) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension LuneSDK.Cashflow {
+  public init(data: Foundation.Data) throws
+  public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
+  public init(fromURL url: Foundation.URL) throws
+  public func with(totalSpend: Swift.Double? = nil, totalIncome: Swift.Double? = nil, startDate: Swift.String? = nil, endDate: Swift.String? = nil) -> LuneSDK.Cashflow
+  public var difference: Swift.Double {
+    get
+  }
+  public var signifiesLoss: Swift.Bool {
+    get
+  }
+  public var summaryTexts: [Swift.String] {
+    get
+  }
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+  public var expenseDatePickerHeader: LuneSDK.DatePickerHeader {
+    get
+  }
+  public var incomeDatePickerHeader: LuneSDK.DatePickerHeader {
+    get
+  }
+}
+@available(iOS 13, *)
+public struct BlurView : SwiftUI.UIViewRepresentable {
+  public typealias UIViewType = UIKit.UIVisualEffectView
+  @_Concurrency.MainActor(unsafe) public func makeUIView(context: LuneSDK.BlurView.Context) -> UIKit.UIVisualEffectView
+  @_Concurrency.MainActor(unsafe) public func updateUIView(_ uiView: UIKit.UIVisualEffectView, context: LuneSDK.BlurView.Context)
+  public typealias Body = Swift.Never
+  public typealias Coordinator = Swift.Void
+}
+public struct LocaleFont : Swift.Codable {
+  public init(regular: Swift.String, ultraLight: Swift.String? = nil, light: Swift.String? = nil, thin: Swift.String? = nil, medium: Swift.String? = nil, semibold: Swift.String? = nil, bold: Swift.String? = nil, heavy: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension LuneSDK.LocaleFont {
+  public init(data: Foundation.Data) throws
+  public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
+  public init(fromURL url: Foundation.URL) throws
+  public func with(regular: Swift.String? = nil, ultraLight: Swift.String? = nil, light: Swift.String? = nil, thin: Swift.String? = nil, medium: Swift.String? = nil, semibold: Swift.String? = nil, bold: Swift.String? = nil, heavy: Swift.String? = nil) -> LuneSDK.LocaleFont
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+}
+public struct DatePickerHeader {
+}
+public enum SavingsRoundAnchor : Swift.String, Swift.Codable, Swift.CodingKey, Swift.Hashable, Swift.CaseIterable {
+  case one
+  case five
+  case ten
+  case twenty
+  public init?(rawValue: Swift.String)
+  public init?(stringValue: Swift.String)
+  public init?(intValue: Swift.Int)
+  public typealias AllCases = [LuneSDK.SavingsRoundAnchor]
+  public typealias RawValue = Swift.String
+  public static var allCases: [LuneSDK.SavingsRoundAnchor] {
+    get
+  }
+  public var intValue: Swift.Int? {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+  public var stringValue: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BaseLuneField : UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var inputViewController: UIKit.UIInputViewController? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var inputAccessoryViewController: UIKit.UIInputViewController? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension LuneSDK.BaseLuneField : LuneSDK.LuneFieldProtocol {
+}
+public struct CategoryBudget : Swift.Codable, Swift.Equatable {
+  public static func == (a: LuneSDK.CategoryBudget, b: LuneSDK.CategoryBudget) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension LuneSDK.CategoryBudget {
+  public init(data: Foundation.Data) throws
+  public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
+  public init(fromURL url: Foundation.URL) throws
+  public func with(categoryID: Swift.String? = nil, categoryDesc: Swift.String? = nil, budgetedAmount: Swift.Double? = nil) -> LuneSDK.CategoryBudget
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+}
+extension SwiftUI.Color {
+  public var uiColor: UIKit.UIColor {
+    get
+  }
+  public var components: (r: CoreFoundation.CGFloat, g: CoreFoundation.CGFloat, b: CoreFoundation.CGFloat, a: CoreFoundation.CGFloat) {
+    get
+  }
+  public init(hexString: Swift.String)
+  public static func random() -> SwiftUI.Color
+  public func lighter(by percentage: CoreFoundation.CGFloat = 30.0) -> SwiftUI.Color
+  public func darker(by percentage: CoreFoundation.CGFloat = 30.0) -> SwiftUI.Color
+  public func adjust(by percentage: CoreFoundation.CGFloat = 30.0) -> SwiftUI.Color
+}
+extension Swift.String : Swift.Identifiable {
+  public var id: Swift.String {
+    get
+  }
+  public typealias ID = Swift.String
+}
+extension UIKit.UIEdgeInsets {
+  public static let defaultTextFieldContainerInset: UIKit.UIEdgeInsets
+}
+public struct TextFieldTheme : Swift.Codable {
+  public enum LuneTextFieldType : Swift.String, Swift.Codable, Swift.CodingKey, Swift.Hashable, Swift.CaseIterable {
+    case regular
+    case bevel
+    case underlined
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias AllCases = [LuneSDK.TextFieldTheme.LuneTextFieldType]
+    public typealias RawValue = Swift.String
+    public static var allCases: [LuneSDK.TextFieldTheme.LuneTextFieldType] {
+      get
+    }
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public static let defaultValue: LuneSDK.TextFieldTheme
+  public init(type: LuneSDK.TextFieldTheme.LuneTextFieldType? = nil, borderRadius: Swift.Double? = nil, strokeWidth: Swift.Double? = nil, outlined: Swift.Bool? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension LuneSDK.TextFieldTheme {
+  public init(data: Foundation.Data) throws
+  public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
+  public init(fromURL url: Foundation.URL) throws
+  public func with(type: LuneSDK.TextFieldTheme.LuneTextFieldType? = nil, borderRadius: Swift.Double? = nil, strokeWidth: Swift.Double? = nil, outlined: Swift.Bool? = nil) -> LuneSDK.TextFieldTheme
+  public func with(_ theme: LuneSDK.TextFieldTheme?) -> LuneSDK.TextFieldTheme
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+}
+@_Concurrency.MainActor(unsafe) public struct CategorySpendChartImpl {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7LuneSDK22CategorySpendChartImplV4bodyQrvp", 0) __
+}
+@_hasMissingDesignatedInitializers @objc public class LuneConfigWrapper : ObjectiveC.NSObject, Foundation.NSCoding {
+  @objc required public init?(coder aDecoder: Foundation.NSCoder)
+  @objc public func encode(with aCoder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol LuneFieldProtocol : UIKit.UITextField {
+  var inputViewController: UIKit.UIInputViewController? { get set }
+  var inputAccessoryViewController: UIKit.UIInputViewController? { get set }
+}
+public struct BrandSpend : Swift.Codable, Swift.Equatable, Swift.Identifiable {
+  public var id: Swift.String {
+    get
+  }
+  public static func == (a: LuneSDK.BrandSpend, b: LuneSDK.BrandSpend) -> Swift.Bool
+  public typealias ID = Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension LuneSDK.BrandSpend {
+  public init(data: Foundation.Data) throws
+  public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
+  public init(fromURL url: Foundation.URL) throws
+  public func with(brandID: Swift.String? = nil, brandName: Swift.String? = nil, brandLogoURL: Swift.String? = nil, currencyCode: Swift.String? = nil, amount: Swift.Double? = nil, transactionCount: Swift.Int? = nil) -> LuneSDK.BrandSpend
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+  public static var emptyValue: LuneSDK.BrandSpend {
+    get
+  }
+}
+public struct BudgetSummary : Swift.Codable, Swift.Equatable {
+  public let budgetedAmount: Swift.Double
+  public static func == (a: LuneSDK.BudgetSummary, b: LuneSDK.BudgetSummary) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension LuneSDK.BudgetSummary {
+  public init(data: Foundation.Data) throws
+  public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
+  public init(fromURL url: Foundation.URL) throws
+  public func with(budgetedAmount: Swift.Double? = nil, spentAmount: Swift.Double? = nil, expectedSpendValue: Swift.Double? = nil, expectedSpendPercent: Swift.Double? = nil) -> LuneSDK.BudgetSummary
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+}
+public enum PlanType : Swift.String, Swift.Codable, Swift.CodingKey, Swift.Hashable, Swift.CaseIterable {
+  case date
+  case amount
+  public init?(rawValue: Swift.String)
+  public init?(stringValue: Swift.String)
+  public init?(intValue: Swift.Int)
+  public typealias AllCases = [LuneSDK.PlanType]
+  public typealias RawValue = Swift.String
+  public static var allCases: [LuneSDK.PlanType] {
+    get
+  }
+  public var intValue: Swift.Int? {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+  public var stringValue: Swift.String {
+    get
+  }
+}
+public struct FontConfig : Swift.Codable {
+  public init(latin: LuneSDK.LocaleFont, arabic: LuneSDK.LocaleFont? = nil, greek: LuneSDK.LocaleFont? = nil, cyrillic: LuneSDK.LocaleFont? = nil, hebrew: LuneSDK.LocaleFont? = nil, chinese: LuneSDK.LocaleFont? = nil, japanese: LuneSDK.LocaleFont? = nil, korean: LuneSDK.LocaleFont? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension LuneSDK.FontConfig {
+  public init(data: Foundation.Data) throws
+  public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
+  public init(fromURL url: Foundation.URL) throws
+  public func with(latin: LuneSDK.LocaleFont? = nil, arabic: LuneSDK.LocaleFont? = nil, greek: LuneSDK.LocaleFont? = nil, cyrillic: LuneSDK.LocaleFont? = nil, hebrew: LuneSDK.LocaleFont? = nil, chinese: LuneSDK.LocaleFont? = nil, japanese: LuneSDK.LocaleFont? = nil, korean: LuneSDK.LocaleFont? = nil) -> LuneSDK.FontConfig
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+}
+@available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
+@propertyWrapper public struct PublishedObject<Value> {
+  public init(wrappedValue: Value) where Value : Combine.ObservableObject, Value.ObjectWillChangePublisher == Combine.ObservableObjectPublisher
+  public init<V>(wrappedValue: V?) where Value == V?, V : Combine.ObservableObject, V.ObjectWillChangePublisher == Combine.ObservableObjectPublisher
+  public var wrappedValue: Value {
+    get
+    set
+  }
+  public static subscript<EnclosingSelf>(_enclosingInstance observed: EnclosingSelf, wrapped wrappedKeyPath: Swift.ReferenceWritableKeyPath<EnclosingSelf, Value>, storage storageKeyPath: Swift.ReferenceWritableKeyPath<EnclosingSelf, LuneSDK.PublishedObject<Value>>) -> Value where EnclosingSelf : Combine.ObservableObject, EnclosingSelf.ObjectWillChangePublisher == Combine.ObservableObjectPublisher {
+    get
+    set
+  }
+  public static subscript<EnclosingSelf>(_enclosingInstance observed: EnclosingSelf, projected wrappedKeyPath: Swift.KeyPath<EnclosingSelf, LuneSDK.PublishedObject<Value>.Publisher>, storage storageKeyPath: Swift.ReferenceWritableKeyPath<EnclosingSelf, LuneSDK.PublishedObject<Value>>) -> LuneSDK.PublishedObject<Value>.Publisher where EnclosingSelf : Combine.ObservableObject, EnclosingSelf.ObjectWillChangePublisher == Combine.ObservableObjectPublisher {
+    get
+  }
+  public typealias Publisher = Combine.AnyPublisher<Value, Swift.Never>
+  public var projectedValue: LuneSDK.PublishedObject<Value>.Publisher {
+    mutating get
+  }
+}
+public struct Shimmer : SwiftUI.ViewModifier {
+  public init(animation: SwiftUI.Animation = Self.defaultAnimation, gradient: SwiftUI.Gradient = Self.defaultGradient, bandSize: CoreFoundation.CGFloat = 0.3)
+  public static let defaultAnimation: SwiftUI.Animation
+  public static let defaultGradient: SwiftUI.Gradient
+  @_Concurrency.MainActor(unsafe) public func body(content: LuneSDK.Shimmer.Content) -> some SwiftUI.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s7LuneSDK7ShimmerV4body7contentQr7SwiftUI21_ViewModifier_ContentVyACG_tF", 0) __
+}
+extension SwiftUI.View {
+  public func shimmer(active: Swift.Bool = true, animation: SwiftUI.Animation = Shimmer.defaultAnimation, gradient: SwiftUI.Gradient = Shimmer.defaultGradient, bandSize: CoreFoundation.CGFloat = 0.3) -> some SwiftUI.View
+  
+  @available(*, deprecated, message: "Use shimmering(active:animation:gradient:bandSize:) instead.")
+  public func shimmer(active: Swift.Bool = true, duration: Swift.Double, bounce: Swift.Bool = false, delay: Swift.Double = 0.25) -> some SwiftUI.View
+  
+}
+public struct LuneField<UITextFieldType> : SwiftUI.UIViewRepresentable where UITextFieldType : LuneSDK.LuneFieldProtocol {
+  public typealias UIViewType = UITextFieldType
+  public init(config: LuneSDK.LuneField<UITextFieldType>.Configuration)
+  @_Concurrency.MainActor(unsafe) public func makeCoordinator() -> LuneSDK.LuneField<UITextFieldType>.Coordinator
+  @_Concurrency.MainActor(unsafe) public func makeUIView(context: LuneSDK.LuneField<UITextFieldType>.Context) -> UITextFieldType
+  @_Concurrency.MainActor(unsafe) public func updateUIView(_ textField: UITextFieldType, context: LuneSDK.LuneField<UITextFieldType>.Context)
+  public typealias Body = Swift.Never
+}
+public struct LuneTransaction : Swift.Codable, Swift.Hashable, Swift.Equatable {
+  public let id: Swift.Int
+  public let brandName: Swift.String?
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: LuneSDK.LuneTransaction, b: LuneSDK.LuneTransaction) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension LuneSDK.LuneTransaction {
+  public init(data: Foundation.Data) throws
+  public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
+  public init(fromURL url: Foundation.URL) throws
+  public func with(id: Swift.Int? = nil, transactionDate: Swift.String? = nil, userNote: Swift.String? = nil, globalTxID: Swift.String? = nil, rawDescription: Swift.String? = nil, categoryID: Swift.String? = nil, brandName: Swift.String? = nil, brandLogo: Swift.String? = nil, currencyCode: Swift.String? = nil, amount: Swift.Double? = nil, roundedAmount: Swift.Double? = nil, isBrandValid: Swift.Bool? = nil, isLogoValid: Swift.Bool? = nil, userEditedBrandName: Swift.String? = nil, isCategoryValid: Swift.Bool? = nil, userEditedCategoryId: Swift.String? = nil, tags: [Swift.String]? = nil, review: LuneSDK.Review? = nil, category: LuneSDK.Category? = nil, suggestedCategory: LuneSDK.Category? = nil) -> LuneSDK.LuneTransaction
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+}
+public struct Review : Swift.Codable, Swift.Hashable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: LuneSDK.Review, b: LuneSDK.Review) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Category : Swift.Codable, Swift.Hashable {
+  public static func == (a: LuneSDK.Category, b: LuneSDK.Category) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LuneInputViewContent<UITextFieldType> where UITextFieldType : LuneSDK.LuneFieldProtocol {
+  public static func view<Content>(@SwiftUI.ViewBuilder content: @escaping (_ uiTextField: UITextFieldType) -> Content) -> LuneSDK.LuneInputViewContent<UITextFieldType> where Content : SwiftUI.View
+  public static var none: LuneSDK.LuneInputViewContent<UITextFieldType> {
+    get
+  }
+}
+public class LuneSDKManager : Combine.ObservableObject {
+  public init(baseUrl: Swift.String = "https://staging.pfm.lunedata.io/api", token: Swift.String, customerId: Swift.String? = nil, localizationTableName: Swift.String? = nil)
+  public func CategorySpendChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil) -> some SwiftUI.View
+  
+  public func CashflowChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil) -> some SwiftUI.View
+  
+  public func CategoryTrendChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil) -> some SwiftUI.View
+  
+  public func BrandTrendChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil) -> some SwiftUI.View
+  
+  public func BrandListComponent() -> some SwiftUI.View
+  
+  public func TransactionListComponent() -> some SwiftUI.View
+  
+  public func BudgetFormComponent() -> some SwiftUI.View
+  
+  public func BudgetComponent() -> some SwiftUI.View
+  
+  public func CashflowComponent(slotContent: (() -> some View) = {
+            EmptyView()
+        }) -> some SwiftUI.View
+  
+  public func CategorySpendListComponent() -> some SwiftUI.View
+  
+  public func TransactionDetailComponent(id: Swift.String, withNotes: Swift.Bool = true) -> some SwiftUI.View
+  
+  public func SavingsComponent() -> some SwiftUI.View
+  
+  public func GoalsComponent() -> some SwiftUI.View
+  
+  public func BrandTrendsComponent() -> some SwiftUI.View
+  
+  public func CategoryTrendsComponent() -> some SwiftUI.View
+  
+  public func ExpenseComponent(slotContent: (() -> some View) = {
+            EmptyView()
+        }) -> some SwiftUI.View
+  
+  public func initializeLogger(logger: @escaping ([Swift.String : Swift.String]) -> ())
+  public func setUpSuccessNotifier(_ notifier: @escaping (Swift.String) -> ())
+  public func setUpErrorNotifier(_ notifier: @escaping (Swift.String) -> ())
+  public func setUpErrorLogger(_ logger: @escaping (LuneSDK.LuneError) -> ())
+  #if compiler(>=5.3) && $AsyncAwait
+  public func setupRefreshCallback(_ callback: (() async -> Swift.String?)?)
+  #endif
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public struct TransactionUpdate : Swift.Codable, Swift.Equatable {
+  public static func == (a: LuneSDK.TransactionUpdate, b: LuneSDK.TransactionUpdate) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension LuneSDK.TransactionUpdate {
+  public init(data: Foundation.Data) throws
+  public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
+  public init(fromURL url: Foundation.URL) throws
+  public func with(id: Swift.Int?? = nil, isBrandValid: Swift.Bool?? = nil, isLogoValid: Swift.Bool?? = nil, userEditedBrandName: Swift.String?? = nil, isCategoryValid: Swift.Bool?? = nil, userEditedCategoryId: Swift.String?? = nil, userEditedCategoryName: Swift.String?? = nil, note: Swift.String?? = nil, tags: [Swift.String]? = nil) -> LuneSDK.TransactionUpdate
+  public func jsonData() throws -> Foundation.Data
+  public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+  public func map() -> [Swift.String : Any]
+}
+extension LuneSDK.LuneField.Configuration {
+  public func keyboardType(_ keyboardType: UIKit.UIKeyboardType?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func keyboardAppearance(_ keyboardAppearance: UIKit.UIKeyboardAppearance?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func returnKeyType(_ returnKeyType: UIKit.UIReturnKeyType?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func textContentType(_ textContentType: UIKit.UITextContentType?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func isSecureTextEntry(_ isSecureTextEntry: Swift.Bool?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func enablesReturnKeyAutomatically(_ enablesReturnKeyAutomatically: Swift.Bool?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func autocapitalizationType(_ autocapitalizationType: UIKit.UITextAutocapitalizationType?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func autocorrectionType(_ autocorrectionType: UIKit.UITextAutocorrectionType?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func spellCheckingType(_ spellCheckingType: UIKit.UITextSpellCheckingType?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func smartQuotesType(_ smartQuotesType: UIKit.UITextSmartQuotesType?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func smartDashesType(_ smartDashesType: UIKit.UITextSmartDashesType?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  public func smartInsertDeleteType(_ smartInsertDeleteType: UIKit.UITextSmartInsertDeleteType?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+}
+@_hasMissingDesignatedInitializers public class LuneError : Swift.Error {
+  final public let message: Swift.String
+  final public let underlyingError: (any Swift.Error)?
+  @objc deinit
+}
+public struct CurrencyField : SwiftUI.View {
+  public init(_ title: Swift.String, value: SwiftUI.Binding<Swift.Double?>)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s7LuneSDK13CurrencyFieldV4bodyQrvp", 0) __
+}
+extension LuneSDK.SaveFrequency : Swift.RawRepresentable {}
+extension LuneSDK.BrandListViewImpl : SwiftUI.View {}
+@available(iOS 13, macOS 11, *)
+extension LuneSDK.AlertToast.BannerAnimation : Swift.Equatable {}
+@available(iOS 13, macOS 11, *)
+extension LuneSDK.AlertToast.BannerAnimation : Swift.Hashable {}
+extension LuneSDK.SavingAllocationType : Swift.RawRepresentable {}
+extension LuneSDK.ButtonTheme.LuneButtonType : Swift.RawRepresentable {}
+extension LuneSDK.TransactionListViewImpl : SwiftUI.View {}
+extension LuneSDK.GoalSettingStage : Swift.RawRepresentable {}
+extension LuneSDK.SavingsRoundAnchor : Swift.RawRepresentable {}
+extension LuneSDK.TextFieldTheme.LuneTextFieldType : Swift.RawRepresentable {}
+extension LuneSDK.CategorySpendChartImpl : SwiftUI.View {}
+extension LuneSDK.PlanType : Swift.RawRepresentable {}
