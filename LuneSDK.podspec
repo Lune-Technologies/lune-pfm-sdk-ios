@@ -71,6 +71,9 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/Lune-Technologies/lune-pfm-sdk-ios.git", :tag => "v#{spec.version}" }
 
+  # Specify the vendored framework
+  spec.vendored_frameworks = 'LuneSDK.xcframework'
+
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
