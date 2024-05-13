@@ -17,8 +17,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "LuneSDK",
-            url: "./LuneSDK.xcframework.zip",
-            checksum: "5b12ac01ab2b276a59962dd9a0dbce9cac81be83cab4921e7fc6a76362fa253a"
+            url: "$DOWNLOAD_URL",
+            checksum: "$CHECKSUM",
         )
     ]
 )
