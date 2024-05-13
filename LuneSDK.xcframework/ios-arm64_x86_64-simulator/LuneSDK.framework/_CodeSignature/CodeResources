@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		NFpLNJbVz3OLgVg0Gn0znxSGECA=
+		fboZgGS1EMC5IJGn9lblS+G3I1E=
 		</data>
 		<key>Headers/LuneSDK-Swift.h</key>
 		<data>
-		Pk30itnG2S0l73P5hCNmehoQKuM=
+		ZRa5RqrHsP9nBIra0PffOo6wTVY=
 		</data>
 		<key>Headers/LuneSDK.h</key>
 		<data>
@@ -18,47 +18,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		kQrjFTXWL+nQUD0xsvPAOBRLLqI=
+		CI+s4EdOVsI9Eh4kTfWUxP38Nd0=
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		EjOeDW5hhn0pfW93twKTw+KPipE=
+		Mrn4E7n9QBbjG+yNxQqNfArRxRI=
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		v0u4bhkuoCKsDDCSR83UKsPuyw8=
+		Y+1jEh6i/SjEm9ZWkQ6B5NfHWIM=
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		XYZM22l80hjgDxyH6aUG8APzIvg=
+		3kudhMAqpQcaqnDfbXAVOKgU7cg=
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		v0u4bhkuoCKsDDCSR83UKsPuyw8=
+		Y+1jEh6i/SjEm9ZWkQ6B5NfHWIM=
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AUlVWY9bQC6A8eZSyIFyadgCTV0=
+		w23LV1PFisn6Jr1Br8NsphbL9FM=
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		EjOeDW5hhn0pfW93twKTw+KPipE=
+		Mrn4E7n9QBbjG+yNxQqNfArRxRI=
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		dnpH4err9Vy8+Hziwg40LKt4PVQ=
+		tx7s78Vpfl7bXGCrDXCwlgEw82Y=
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		J9NXJwOefyThUiIt637sZuzukmQ=
+		0vfIJm4X2LCVjpSCtkdHFrAlHFE=
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dnpH4err9Vy8+Hziwg40LKt4PVQ=
+		tx7s78Vpfl7bXGCrDXCwlgEw82Y=
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		f0L1b1w5k3bKuP+G50CzR6QE7lY=
+		+2N01UX98JNxkq8oHWY5YoHujyY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,14 +107,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AAU56fr0/NQwtuVm/89+sBIi78S1VSs66P39qmXkUcg=
+			WqsmfpiIaKloU7SM4u2j6/lN9ey7Oqq2t8GGtjkmP0g=
 			</data>
 		</dict>
 		<key>Headers/LuneSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HavcA5oRG9LmMEKrdiOD8qfPVyBwITsa2ZEjlK5InPg=
+			9ci3xdhbr1wgbBV4NXvSjEb1egULN5/dxgqd8YwlEZI=
 			</data>
 		</dict>
 		<key>Headers/LuneSDK.h</key>
@@ -128,70 +128,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2WE7qDF+QMhEwtC5bbZMGoLJPz1eypQMa03lAamicyQ=
+			cBm/pIIecQOAlpa0IZRSiOFL2vEFsY4MhflOjKRZwuU=
 			</data>
 		</dict>
 		<key>Modules/LuneSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b765EWfdDauFPGYw7Df5V1JfY3fa58fh91ZXwwVZBcU=
+			HiOB9bO8cnX/raMuMsnu7wrAVBmhX+gzVAxQokDn50s=
 			</data>
 		</dict>
 		<key>Modules/LuneSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6RVcPrvWjcU15b0+GHCpeJETDqF/fUCXCX0PODG27ZE=
+			AX1Gfaiay53aAb9cKSCsX1yFZwLYBCPySQskQmRwM/g=
 			</data>
 		</dict>
 		<key>Modules/LuneSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b765EWfdDauFPGYw7Df5V1JfY3fa58fh91ZXwwVZBcU=
+			HiOB9bO8cnX/raMuMsnu7wrAVBmhX+gzVAxQokDn50s=
 			</data>
 		</dict>
 		<key>Modules/LuneSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wvzj286lqF8/W5heH/9sLgfXdH1QquKI4eYUHw4oAqU=
+			VdszoWlxj61RT7sZZQf0qIF23ArJvgfsgMJpfMfvFNc=
 			</data>
 		</dict>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2WE7qDF+QMhEwtC5bbZMGoLJPz1eypQMa03lAamicyQ=
+			cBm/pIIecQOAlpa0IZRSiOFL2vEFsY4MhflOjKRZwuU=
 			</data>
 		</dict>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4hOwmLuA5UdgAy8c9a2uD3uXLUw2dNb2Qpf078r9WAA=
+			5ubrjSob/CTfAYngefDDIDuc8VqiKDfJ1lpKUtuX7Wc=
 			</data>
 		</dict>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cf6raC6tuho2LH5TdCAjpe2x9h/n/uKOAvmLWbut058=
+			j/ucj2/ErjpTKGMlX/nDKm6xMvyhX1bmiSBJ/XGXb2E=
 			</data>
 		</dict>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4hOwmLuA5UdgAy8c9a2uD3uXLUw2dNb2Qpf078r9WAA=
+			5ubrjSob/CTfAYngefDDIDuc8VqiKDfJ1lpKUtuX7Wc=
 			</data>
 		</dict>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fStHkRf6jwhf700oIlsfg2HNQjAlYwt41zyT5JkkgEk=
+			XgWkd8O0EtMTNTJP6mkFYW6jHgeLWZjm7KQAb824Y+w=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

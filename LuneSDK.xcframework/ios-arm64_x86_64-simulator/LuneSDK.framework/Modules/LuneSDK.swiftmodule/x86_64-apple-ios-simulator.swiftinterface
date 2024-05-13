@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name LuneSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name LuneSDK
 import Charts
 import Combine
 import DeveloperToolsSupport
@@ -763,8 +762,8 @@ public struct Review : Swift.Codable, Swift.Hashable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct Category : Swift.Codable, Swift.Hashable {
-  public static func == (a: LuneSDK.Category, b: LuneSDK.Category) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: LuneSDK.Category, b: LuneSDK.Category) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
