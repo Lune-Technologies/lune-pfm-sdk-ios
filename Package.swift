@@ -17,8 +17,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "LuneSDK",
-            url: "$DOWNLOAD_URL",
-            checksum: "$CHECKSUM",
+            url: "",
+            checksum: "473a33665d7d8086244acc04cc5b6c4c7570c8f4647f81289549713b91e63927",
         )
     ]
 )
