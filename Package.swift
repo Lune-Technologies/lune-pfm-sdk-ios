@@ -18,7 +18,7 @@ let package = Package(
         .binaryTarget(
             name: "LuneSDK",
             url: "https://github.com/Lune-Technologies/lune-pfm-sdk-ios/raw/main/LuneSDK.xcframework.zip",
-            checksum: "92ffb2612e779648b4f82dc5bb6bdba006158cc751cd0bad500d6e3634161ec6",
+            checksum: "0bdaeeb9bfae92ede0ff002e70594bb069f9dccf4f51a01b20bbe5c85be19d92"
         )
     ]
 )
