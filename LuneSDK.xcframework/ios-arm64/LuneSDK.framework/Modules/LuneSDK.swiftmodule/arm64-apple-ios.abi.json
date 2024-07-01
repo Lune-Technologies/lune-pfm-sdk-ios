@@ -6349,14 +6349,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               }
             ],
             "declKind": "Var",
-            "usr": "s:7LuneSDK13CategorySpendV2idSSvp",
-            "mangledName": "$s7LuneSDK13CategorySpendV2idSSvp",
+            "usr": "s:7LuneSDK13CategorySpendV2idSivp",
+            "mangledName": "$s7LuneSDK13CategorySpendV2idSivp",
             "moduleName": "LuneSDK",
             "declAttributes": [
               "AccessControl"
@@ -6369,14 +6369,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7LuneSDK13CategorySpendV2idSSvg",
-                "mangledName": "$s7LuneSDK13CategorySpendV2idSSvg",
+                "usr": "s:7LuneSDK13CategorySpendV2idSivg",
+                "mangledName": "$s7LuneSDK13CategorySpendV2idSivg",
                 "moduleName": "LuneSDK",
                 "accessorKind": "get"
               }
@@ -6564,13 +6564,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "Swift.Int?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -6638,8 +6638,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7LuneSDK13CategorySpendV4with10categoryID0F4Desc5count6amount0F0ACSSSg_AJSiSgSdSgAA0C0VSgtF",
-            "mangledName": "$s7LuneSDK13CategorySpendV4with10categoryID0F4Desc5count6amount0F0ACSSSg_AJSiSgSdSgAA0C0VSgtF",
+            "usr": "s:7LuneSDK13CategorySpendV4with10categoryID0F4Desc5count6amount0F0ACSiSg_SSSgAJSdSgAA0C0VSgtF",
+            "mangledName": "$s7LuneSDK13CategorySpendV4with10categoryID0F4Desc5count6amount0F0ACSiSg_SSSgAJSdSgAA0C0VSgtF",
             "moduleName": "LuneSDK",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -6742,9 +6742,9 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ]
               }
@@ -8419,19 +8419,27 @@
           },
           {
             "kind": "Var",
-            "name": "message",
-            "printedName": "message",
+            "name": "success",
+            "printedName": "success",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:7LuneSDK0A8ResponseV7messageSSvp",
-            "mangledName": "$s7LuneSDK0A8ResponseV7messageSSvp",
+            "usr": "s:7LuneSDK0A8ResponseV7successSbSgvp",
+            "mangledName": "$s7LuneSDK0A8ResponseV7successSbSgvp",
             "moduleName": "LuneSDK",
             "declAttributes": [
               "HasStorage",
@@ -8447,14 +8455,84 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7LuneSDK0A8ResponseV7successSbSgvg",
+                "mangledName": "$s7LuneSDK0A8ResponseV7successSbSgvg",
+                "moduleName": "LuneSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
+                "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable>",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
                     "name": "String",
                     "printedName": "Swift.String",
                     "usr": "s:SS"
                   }
                 ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7LuneSDK0A8ResponseV7messageSSSgvp",
+            "mangledName": "$s7LuneSDK0A8ResponseV7messageSSSgvp",
+            "moduleName": "LuneSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
                 "declKind": "Accessor",
-                "usr": "s:7LuneSDK0A8ResponseV7messageSSvg",
-                "mangledName": "$s7LuneSDK0A8ResponseV7messageSSvg",
+                "usr": "s:7LuneSDK0A8ResponseV7messageSSSgvg",
+                "mangledName": "$s7LuneSDK0A8ResponseV7messageSSSgvg",
                 "moduleName": "LuneSDK",
                 "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
                 "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable>",
@@ -8988,7 +9066,7 @@
           {
             "kind": "Function",
             "name": "with",
-            "printedName": "with(data:message:next:previous:count:)",
+            "printedName": "with(data:success:message:next:previous:count:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9012,6 +9090,21 @@
                     "kind": "TypeNominal",
                     "name": "GenericTypeParam",
                     "printedName": "τ_0_0"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -9079,8 +9172,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7LuneSDK0A8ResponseV4with4data7message4next8previous5countACyxGxSg_SSSgA2LSiSgtF",
-            "mangledName": "$s7LuneSDK0A8ResponseV4with4data7message4next8previous5countACyxGxSg_SSSgA2LSiSgtF",
+            "usr": "s:7LuneSDK0A8ResponseV4with4data7success7message4next8previous5countACyxGxSg_SbSgSSSgA2NSiSgtF",
+            "mangledName": "$s7LuneSDK0A8ResponseV4with4data7success7message4next8previous5countACyxGxSg_SbSgSSSgA2NSiSgtF",
             "moduleName": "LuneSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable, τ_0_0 : Swift.Encodable>",
             "sugared_genericSig": "<T where T : Swift.Decodable, T : Swift.Encodable>",
@@ -9196,14 +9289,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               }
             ],
             "declKind": "Var",
-            "usr": "s:7LuneSDK19CategoryBudgetSpendV2idSSvp",
-            "mangledName": "$s7LuneSDK19CategoryBudgetSpendV2idSSvp",
+            "usr": "s:7LuneSDK19CategoryBudgetSpendV2idSivp",
+            "mangledName": "$s7LuneSDK19CategoryBudgetSpendV2idSivp",
             "moduleName": "LuneSDK",
             "declAttributes": [
               "AccessControl"
@@ -9216,14 +9309,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7LuneSDK19CategoryBudgetSpendV2idSSvg",
-                "mangledName": "$s7LuneSDK19CategoryBudgetSpendV2idSSvg",
+                "usr": "s:7LuneSDK19CategoryBudgetSpendV2idSivg",
+                "mangledName": "$s7LuneSDK19CategoryBudgetSpendV2idSivg",
                 "moduleName": "LuneSDK",
                 "accessorKind": "get"
               }
@@ -9475,13 +9568,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "Swift.Int?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -9564,8 +9657,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7LuneSDK19CategoryBudgetSpendV4with10categoryID0G4Desc14budgetedAmount05spentK017transactionsCount0G0ACSSSg_AKSdSgALSiSgAA0C0VSgtF",
-            "mangledName": "$s7LuneSDK19CategoryBudgetSpendV4with10categoryID0G4Desc14budgetedAmount05spentK017transactionsCount0G0ACSSSg_AKSdSgALSiSgAA0C0VSgtF",
+            "usr": "s:7LuneSDK19CategoryBudgetSpendV4with10categoryID0G4Desc14budgetedAmount05spentK017transactionsCount0G0ACSiSg_SSSgSdSgAmkA0C0VSgtF",
+            "mangledName": "$s7LuneSDK19CategoryBudgetSpendV4with10categoryID0G4Desc14budgetedAmount05spentK017transactionsCount0G0ACSiSg_SSSgSdSgAmkA0C0VSgtF",
             "moduleName": "LuneSDK",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -9675,9 +9768,9 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ]
               }
@@ -14111,13 +14204,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "Swift.Int?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -14155,8 +14248,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7LuneSDK14CategoryBudgetV4with10categoryID0F4Desc14budgetedAmountACSSSg_AHSdSgtF",
-            "mangledName": "$s7LuneSDK14CategoryBudgetV4with10categoryID0F4Desc14budgetedAmountACSSSg_AHSdSgtF",
+            "usr": "s:7LuneSDK14CategoryBudgetV4with10categoryID0F4Desc14budgetedAmountACSiSg_SSSgSdSgtF",
+            "mangledName": "$s7LuneSDK14CategoryBudgetV4with10categoryID0F4Desc14budgetedAmountACSiSg_SSSgSdSgtF",
             "moduleName": "LuneSDK",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -16043,14 +16136,54 @@
             "children": [
               {
                 "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7LuneSDK10BrandSpendV2idSivp",
+            "mangledName": "$s7LuneSDK10BrandSpendV2idSivp",
+            "moduleName": "LuneSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7LuneSDK10BrandSpendV2idSivg",
+                "mangledName": "$s7LuneSDK10BrandSpendV2idSivg",
+                "moduleName": "LuneSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "queryId",
+            "printedName": "queryId",
+            "children": [
+              {
+                "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:7LuneSDK10BrandSpendV2idSSvp",
-            "mangledName": "$s7LuneSDK10BrandSpendV2idSSvp",
+            "usr": "s:7LuneSDK10BrandSpendV7queryIdSSvp",
+            "mangledName": "$s7LuneSDK10BrandSpendV7queryIdSSvp",
             "moduleName": "LuneSDK",
             "declAttributes": [
               "AccessControl"
@@ -16069,8 +16202,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7LuneSDK10BrandSpendV2idSSvg",
-                "mangledName": "$s7LuneSDK10BrandSpendV2idSSvg",
+                "usr": "s:7LuneSDK10BrandSpendV7queryIdSSvg",
+                "mangledName": "$s7LuneSDK10BrandSpendV7queryIdSSvg",
                 "moduleName": "LuneSDK",
                 "accessorKind": "get"
               }
@@ -16258,13 +16391,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "Swift.Int?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -16347,8 +16480,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7LuneSDK10BrandSpendV4with7brandID0F4Name0F7LogoURL12currencyCode6amount16transactionCountACSSSg_A3KSdSgSiSgtF",
-            "mangledName": "$s7LuneSDK10BrandSpendV4with7brandID0F4Name0F7LogoURL12currencyCode6amount16transactionCountACSSSg_A3KSdSgSiSgtF",
+            "usr": "s:7LuneSDK10BrandSpendV4with7brandID0F4Name0F7LogoURL12currencyCode6amount16transactionCountACSiSg_SSSgA2LSdSgAKtF",
+            "mangledName": "$s7LuneSDK10BrandSpendV4with7brandID0F4Name0F7LogoURL12currencyCode6amount16transactionCountACSiSg_SSSgA2LSdSgAKtF",
             "moduleName": "LuneSDK",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -16492,9 +16625,9 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ]
               }
@@ -21950,13 +22083,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "Swift.Int?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -22100,13 +22233,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "Swift.Int?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -22182,8 +22315,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7LuneSDK0A11TransactionV4with2id15transactionDate8userNote10globalTxID14rawDescription08categoryL09brandName0P4Logo12currencyCode6amount13roundedAmount12isBrandValid0xrZ00h6EditedyQ00x8CategoryZ00H16EditedCategoryId4tags6review0O017suggestedCategoryACSiSg_SSSgA7ZSdSgA_SbSgA0_AZA0_AZSaySSGSgAA6ReviewVSgAA8CategoryVSgA8_tF",
-            "mangledName": "$s7LuneSDK0A11TransactionV4with2id15transactionDate8userNote10globalTxID14rawDescription08categoryL09brandName0P4Logo12currencyCode6amount13roundedAmount12isBrandValid0xrZ00h6EditedyQ00x8CategoryZ00H16EditedCategoryId4tags6review0O017suggestedCategoryACSiSg_SSSgA7ZSdSgA_SbSgA0_AZA0_AZSaySSGSgAA6ReviewVSgAA8CategoryVSgA8_tF",
+            "usr": "s:7LuneSDK0A11TransactionV4with2id15transactionDate8userNote10globalTxID14rawDescription08categoryL09brandName0P4Logo12currencyCode6amount13roundedAmount12isBrandValid0xrZ00h6EditedyQ00x8CategoryZ00H16EditedCategoryId4tags6review0O017suggestedCategoryACSiSg_SSSgA3zy3ZSdSgA_SbSgA0_AZA0_AYSaySSGSgAA6ReviewVSgAA8CategoryVSgA8_tF",
+            "mangledName": "$s7LuneSDK0A11TransactionV4with2id15transactionDate8userNote10globalTxID14rawDescription08categoryL09brandName0P4Logo12currencyCode6amount13roundedAmount12isBrandValid0xrZ00h6EditedyQ00x8CategoryZ00H16EditedCategoryId4tags6review0O017suggestedCategoryACSiSg_SSSgA3zy3ZSdSgA_SbSgA0_AZA0_AYSaySSGSgAA6ReviewVSgAA8CategoryVSgA8_tF",
             "moduleName": "LuneSDK",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -24118,18 +24251,18 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String??",
+                "printedName": "Swift.Int??",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "Swift.Int?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
                       }
                     ],
                     "usr": "s:Sq"
@@ -24209,8 +24342,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7LuneSDK17TransactionUpdateV4with2id12isBrandValid0g4LogoI0010userEditedH4Name0g8CategoryI00klN2Id0klnM04note4tagsACSiSgSg_SbSgSgAQSSSgSgAq3SSaySSGSgtF",
-            "mangledName": "$s7LuneSDK17TransactionUpdateV4with2id12isBrandValid0g4LogoI0010userEditedH4Name0g8CategoryI00klN2Id0klnM04note4tagsACSiSgSg_SbSgSgAQSSSgSgAq3SSaySSGSgtF",
+            "usr": "s:7LuneSDK17TransactionUpdateV4with2id12isBrandValid0g4LogoI0010userEditedH4Name0g8CategoryI00klN2Id0klnM04note4tagsACSiSgSg_SbSgSgAQSSSgSgAqo2SSaySSGSgtF",
+            "mangledName": "$s7LuneSDK17TransactionUpdateV4with2id12isBrandValid0g4LogoI0010userEditedH4Name0g8CategoryI00klN2Id0klnM04note4tagsACSiSgSg_SbSgSgAQSSSgSgAqo2SSaySSGSgtF",
             "moduleName": "LuneSDK",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -26616,7 +26749,7 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Goals\/ExistingGoals\/GoalTile.swift",
       "kind": "StringLiteral",
-      "offset": 13714,
+      "offset": 13688,
       "length": 4,
       "value": "\"11\""
     },
@@ -26700,21 +26833,21 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategoryTrend\/CategoryTrendViewImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 1147,
+      "offset": 1144,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategoryTrend\/CategoryTrendViewImpl.swift",
       "kind": "Array",
-      "offset": 6020,
+      "offset": 6042,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategoryTrend\/CategoryTrendViewImpl.swift",
       "kind": "StringLiteral",
-      "offset": 15470,
+      "offset": 16773,
       "length": 4,
       "value": "\"11\""
     },
@@ -26763,28 +26896,28 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionDetailViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 493,
+      "offset": 490,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionDetailViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 641,
+      "offset": 638,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionDetailViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 690,
+      "offset": 687,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionDetailViewModel.swift",
       "kind": "Array",
-      "offset": 729,
+      "offset": 726,
       "length": 2,
       "value": "[]"
     },
@@ -26924,14 +27057,14 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/ExpenseBreakdown\/ExpensebreakdownListTile.swift",
       "kind": "BooleanLiteral",
-      "offset": 3280,
+      "offset": 3306,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/ExpenseBreakdown\/ExpensebreakdownListTile.swift",
       "kind": "StringLiteral",
-      "offset": 4657,
+      "offset": 4683,
       "length": 4,
       "value": "\"11\""
     },
@@ -26952,42 +27085,70 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/ImageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 642,
+      "offset": 626,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/ImageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 702,
+      "offset": 679,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/ImageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 725,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/ImageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 770,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/ImageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 813,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/ImageView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1750,
+      "offset": 1974,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/ImageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1952,
+      "offset": 2169,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/ImageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1986,
+      "offset": 2203,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/ImageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2018,
+      "offset": 2235,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/ImageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3238,
       "length": 5,
       "value": "false"
     },
@@ -27120,7 +27281,7 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Goals\/ExistingGoals\/EditGoal.swift",
       "kind": "StringLiteral",
-      "offset": 13338,
+      "offset": 13330,
       "length": 4,
       "value": "\"11\""
     },
@@ -28988,6 +29149,13 @@
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Expense\/ExpenseViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 345,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Expense\/ExpenseViewModel.swift",
       "kind": "StringLiteral",
       "offset": 113,
       "length": 16,
@@ -29661,21 +29829,28 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/BrandTrend\/BrandTrendViewModel.swift",
       "kind": "Array",
-      "offset": 450,
+      "offset": 447,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/BrandTrend\/BrandTrendViewModel.swift",
       "kind": "Array",
-      "offset": 593,
+      "offset": 587,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/BrandTrend\/BrandTrendViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 624,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/BrandTrend\/BrandTrendViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 2079,
+      "offset": 2221,
       "length": 1,
       "value": "1"
     },
@@ -30284,28 +30459,28 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/Goal.swift",
       "kind": "StringLiteral",
-      "offset": 11696,
+      "offset": 11217,
       "length": 14,
       "value": "\"total_amount\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/Goal.swift",
       "kind": "StringLiteral",
-      "offset": 11763,
+      "offset": 11284,
       "length": 18,
       "value": "\"amount_per_month\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/Goal.swift",
       "kind": "StringLiteral",
-      "offset": 11696,
+      "offset": 11217,
       "length": 14,
       "value": "\"total_amount\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/Goal.swift",
       "kind": "StringLiteral",
-      "offset": 11763,
+      "offset": 11284,
       "length": 18,
       "value": "\"amount_per_month\""
     },
@@ -30774,91 +30949,91 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionDetailViewImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 24517,
+      "offset": 23327,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionDetailViewImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 25188,
+      "offset": 23998,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionDetailViewImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 26641,
+      "offset": 25451,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionDetailViewImpl.swift",
       "kind": "StringLiteral",
-      "offset": 46249,
+      "offset": 45056,
       "length": 4,
       "value": "\"11\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/ExpenseBreakdown\/ExpenseBreakdownList.swift",
       "kind": "IntegerLiteral",
-      "offset": 956,
+      "offset": 951,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/ExpenseBreakdown\/ExpenseBreakdownList.swift",
       "kind": "StringLiteral",
-      "offset": 1322,
+      "offset": 1317,
       "length": 5,
       "value": "\"asc\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/ExpenseBreakdown\/ExpenseBreakdownList.swift",
       "kind": "BooleanLiteral",
-      "offset": 1375,
+      "offset": 1370,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/ExpenseBreakdown\/ExpenseBreakdownList.swift",
       "kind": "IntegerLiteral",
-      "offset": 1676,
+      "offset": 1671,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/ExpenseBreakdown\/ExpenseBreakdownList.swift",
       "kind": "StringLiteral",
-      "offset": 15885,
+      "offset": 15880,
       "length": 4,
       "value": "\"11\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/PieChart.swift",
       "kind": "Array",
-      "offset": 650,
+      "offset": 647,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/PieChart.swift",
       "kind": "FloatLiteral",
-      "offset": 771,
+      "offset": 768,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/PieChart.swift",
       "kind": "FloatLiteral",
-      "offset": 1287,
+      "offset": 1281,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/PieChart.swift",
       "kind": "FloatLiteral",
-      "offset": 23132,
+      "offset": 23094,
       "length": 3,
       "value": "0.0"
     },
@@ -30928,49 +31103,77 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Controller\/LuneViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 939,
+      "offset": 1041,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Controller\/LuneViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 976,
+      "offset": 1078,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Controller\/LuneViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1442,
+      "offset": 1118,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Controller\/LuneViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1847,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Controller\/LuneViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1479,
+      "offset": 1884,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Controller\/LuneViewModel.swift",
       "kind": "Dictionary",
-      "offset": 4138,
+      "offset": 4543,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Controller\/LuneViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4168,
+      "offset": 4573,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Controller\/LuneViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4199,
+      "offset": 4604,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Controller\/LuneViewModel.swift",
+      "kind": "Dictionary",
+      "offset": 7111,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Controller\/LuneViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 7141,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Controller\/LuneViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7172,
       "length": 5,
       "value": "false"
     },
@@ -31148,6 +31351,13 @@
       "offset": 588,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Controller\/LuneGlobals.swift",
+      "kind": "IntegerLiteral",
+      "offset": 754,
+      "length": 3,
+      "value": "-99"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/BudgetBar.swift",
@@ -31362,35 +31572,35 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategorySpend.swift",
       "kind": "StringLiteral",
-      "offset": 506,
+      "offset": 519,
       "length": 5,
       "value": "\"AED\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategorySpend.swift",
       "kind": "StringLiteral",
-      "offset": 616,
+      "offset": 629,
       "length": 13,
       "value": "\"category_id\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategorySpend.swift",
       "kind": "StringLiteral",
-      "offset": 658,
+      "offset": 671,
       "length": 15,
       "value": "\"category_desc\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategorySpend.swift",
       "kind": "StringLiteral",
-      "offset": 616,
+      "offset": 629,
       "length": 13,
       "value": "\"category_id\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategorySpend.swift",
       "kind": "StringLiteral",
-      "offset": 658,
+      "offset": 671,
       "length": 15,
       "value": "\"category_desc\""
     },
@@ -31684,37 +31894,30 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 267,
+      "offset": 266,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewModel.swift",
       "kind": "Array",
-      "offset": 373,
+      "offset": 372,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewModel.swift",
       "kind": "Array",
-      "offset": 539,
+      "offset": 535,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewModel.swift",
       "kind": "Array",
-      "offset": 603,
+      "offset": 599,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 648,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewModel.swift",
@@ -31775,49 +31978,56 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewModel.swift",
       "kind": "Array",
-      "offset": 1954,
+      "offset": 1951,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3292,
+      "offset": 2153,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3436,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3918,
+      "offset": 4062,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 8605,
+      "offset": 8757,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 10875,
+      "offset": 11037,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 12676,
+      "offset": 12842,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 135,
+      "offset": 134,
       "length": 24,
       "value": "\"LuneSDK.TransactionListViewModel\""
     },
@@ -31886,78 +32096,85 @@
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Cashflow\/CashflowChartImpl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1142,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Cashflow\/CashflowChartImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2964,
+      "offset": 3278,
       "length": 4,
       "value": "\"11\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategoryBudgetSpend.swift",
       "kind": "StringLiteral",
-      "offset": 2107,
+      "offset": 2117,
       "length": 13,
       "value": "\"category_id\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategoryBudgetSpend.swift",
       "kind": "StringLiteral",
-      "offset": 2149,
+      "offset": 2159,
       "length": 15,
       "value": "\"category_desc\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategoryBudgetSpend.swift",
       "kind": "StringLiteral",
-      "offset": 2195,
+      "offset": 2205,
       "length": 17,
       "value": "\"budgeted_amount\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategoryBudgetSpend.swift",
       "kind": "StringLiteral",
-      "offset": 2240,
+      "offset": 2250,
       "length": 14,
       "value": "\"spent_amount\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategoryBudgetSpend.swift",
       "kind": "StringLiteral",
-      "offset": 2288,
+      "offset": 2298,
       "length": 20,
       "value": "\"transactions_count\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategoryBudgetSpend.swift",
       "kind": "StringLiteral",
-      "offset": 2107,
+      "offset": 2117,
       "length": 13,
       "value": "\"category_id\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategoryBudgetSpend.swift",
       "kind": "StringLiteral",
-      "offset": 2149,
+      "offset": 2159,
       "length": 15,
       "value": "\"category_desc\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategoryBudgetSpend.swift",
       "kind": "StringLiteral",
-      "offset": 2195,
+      "offset": 2205,
       "length": 17,
       "value": "\"budgeted_amount\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategoryBudgetSpend.swift",
       "kind": "StringLiteral",
-      "offset": 2240,
+      "offset": 2250,
       "length": 14,
       "value": "\"spent_amount\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategoryBudgetSpend.swift",
       "kind": "StringLiteral",
-      "offset": 2288,
+      "offset": 2298,
       "length": 20,
       "value": "\"transactions_count\""
     },
@@ -32041,63 +32258,63 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 2318,
+      "offset": 2315,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 2418,
+      "offset": 2415,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 2452,
+      "offset": 2449,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 2485,
+      "offset": 2482,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewImpl.swift",
       "kind": "Array",
-      "offset": 2557,
+      "offset": 2551,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4276,
+      "offset": 4271,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 4322,
+      "offset": 4317,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 4365,
+      "offset": 4360,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionListViewImpl.swift",
       "kind": "StringLiteral",
-      "offset": 37904,
+      "offset": 37999,
       "length": 4,
       "value": "\"11\""
     },
@@ -32502,6 +32719,13 @@
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Cashflow\/CashflowViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 331,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Cashflow\/CashflowViewModel.swift",
       "kind": "StringLiteral",
       "offset": 114,
       "length": 17,
@@ -32804,77 +33028,77 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/BarChart\/BarChart.swift",
       "kind": "IntegerLiteral",
-      "offset": 2710,
+      "offset": 2698,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/BarChart\/BarChart.swift",
       "kind": "IntegerLiteral",
-      "offset": 2755,
+      "offset": 2743,
       "length": 3,
       "value": "170"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/BarChart\/BarChart.swift",
       "kind": "IntegerLiteral",
-      "offset": 2799,
+      "offset": 2787,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/BarChart\/BarChart.swift",
       "kind": "IntegerLiteral",
-      "offset": 2841,
+      "offset": 2829,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/BarChart\/BarChart.swift",
       "kind": "BooleanLiteral",
-      "offset": 2871,
+      "offset": 2859,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/BarChart\/BarChart.swift",
       "kind": "BooleanLiteral",
-      "offset": 2901,
+      "offset": 2889,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/BarChart\/BarChart.swift",
       "kind": "BooleanLiteral",
-      "offset": 2930,
+      "offset": 2918,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/BarChart\/BarChart.swift",
       "kind": "BooleanLiteral",
-      "offset": 3401,
+      "offset": 3389,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/BarChart\/BarChart.swift",
       "kind": "IntegerLiteral",
-      "offset": 7214,
+      "offset": 7239,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/BarChart\/BarChart.swift",
       "kind": "IntegerLiteral",
-      "offset": 9974,
+      "offset": 9999,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/BarChart\/BarChart.swift",
       "kind": "StringLiteral",
-      "offset": 10841,
+      "offset": 10866,
       "length": 4,
       "value": "\"11\""
     },
@@ -33175,63 +33399,63 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/TransactionTile.swift",
       "kind": "StringLiteral",
-      "offset": 8973,
+      "offset": 9020,
       "length": 4,
       "value": "\"11\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Expense\/ExpenseViewImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 483,
+      "offset": 556,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Expense\/ExpenseViewImpl.swift",
       "kind": "StringLiteral",
-      "offset": 10883,
+      "offset": 11321,
       "length": 4,
       "value": "\"11\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategoryBudget.swift",
       "kind": "StringLiteral",
-      "offset": 484,
+      "offset": 481,
       "length": 13,
       "value": "\"category_id\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategoryBudget.swift",
       "kind": "StringLiteral",
-      "offset": 526,
+      "offset": 523,
       "length": 15,
       "value": "\"category_desc\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategoryBudget.swift",
       "kind": "StringLiteral",
-      "offset": 572,
+      "offset": 569,
       "length": 17,
       "value": "\"budgeted_amount\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategoryBudget.swift",
       "kind": "StringLiteral",
-      "offset": 484,
+      "offset": 481,
       "length": 13,
       "value": "\"category_id\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategoryBudget.swift",
       "kind": "StringLiteral",
-      "offset": 526,
+      "offset": 523,
       "length": 15,
       "value": "\"category_desc\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategoryBudget.swift",
       "kind": "StringLiteral",
-      "offset": 572,
+      "offset": 569,
       "length": 17,
       "value": "\"budgeted_amount\""
     },
@@ -33546,7 +33770,7 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Cashflow\/CashflowViewImpl.swift",
       "kind": "StringLiteral",
-      "offset": 16947,
+      "offset": 16910,
       "length": 4,
       "value": "\"11\""
     },
@@ -33651,7 +33875,7 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategorySpend\/CategorySpendChartImpl.swift",
       "kind": "StringLiteral",
-      "offset": 8320,
+      "offset": 9002,
       "length": 4,
       "value": "\"11\""
     },
@@ -33672,16 +33896,23 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategoryTrend\/CategoryTrendViewModel.swift",
       "kind": "Array",
-      "offset": 363,
+      "offset": 360,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategoryTrend\/CategoryTrendViewModel.swift",
       "kind": "Array",
-      "offset": 506,
+      "offset": 500,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategoryTrend\/CategoryTrendViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 537,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategoryTrend\/CategoryTrendViewModel.swift",
@@ -33819,7 +34050,7 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Goals\/ExistingGoals\/GoalDetailImpl.swift",
       "kind": "StringLiteral",
-      "offset": 17500,
+      "offset": 17482,
       "length": 4,
       "value": "\"11\""
     },
@@ -34365,70 +34596,70 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/BrandSpend.swift",
       "kind": "StringLiteral",
-      "offset": 960,
+      "offset": 667,
       "length": 10,
       "value": "\"brand_id\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/BrandSpend.swift",
       "kind": "StringLiteral",
-      "offset": 996,
+      "offset": 703,
       "length": 12,
       "value": "\"brand_name\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/BrandSpend.swift",
       "kind": "StringLiteral",
-      "offset": 1041,
+      "offset": 748,
       "length": 11,
       "value": "\"txn_count\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/BrandSpend.swift",
       "kind": "StringLiteral",
-      "offset": 1081,
+      "offset": 788,
       "length": 12,
       "value": "\"brand_logo\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/BrandSpend.swift",
       "kind": "StringLiteral",
-      "offset": 1122,
+      "offset": 829,
       "length": 15,
       "value": "\"currency_code\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/BrandSpend.swift",
       "kind": "StringLiteral",
-      "offset": 960,
+      "offset": 667,
       "length": 10,
       "value": "\"brand_id\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/BrandSpend.swift",
       "kind": "StringLiteral",
-      "offset": 996,
+      "offset": 703,
       "length": 12,
       "value": "\"brand_name\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/BrandSpend.swift",
       "kind": "StringLiteral",
-      "offset": 1041,
+      "offset": 748,
       "length": 11,
       "value": "\"txn_count\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/BrandSpend.swift",
       "kind": "StringLiteral",
-      "offset": 1081,
+      "offset": 788,
       "length": 12,
       "value": "\"brand_logo\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/BrandSpend.swift",
       "kind": "StringLiteral",
-      "offset": 1122,
+      "offset": 829,
       "length": 15,
       "value": "\"currency_code\""
     },
@@ -34526,49 +34757,49 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategorySpendList\/CategorySpendListViewImpl.swift",
       "kind": "Dictionary",
-      "offset": 2009,
+      "offset": 2006,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategorySpendList\/CategorySpendListViewImpl.swift",
       "kind": "FloatLiteral",
-      "offset": 2059,
+      "offset": 2056,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategorySpendList\/CategorySpendListViewImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 2114,
+      "offset": 2111,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategorySpendList\/CategorySpendListViewImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 2157,
+      "offset": 2154,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategorySpendList\/CategorySpendListViewImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 2197,
+      "offset": 2194,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategorySpendList\/CategorySpendListViewImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 2668,
+      "offset": 2665,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategorySpendList\/CategorySpendListViewImpl.swift",
       "kind": "StringLiteral",
-      "offset": 25761,
+      "offset": 25742,
       "length": 4,
       "value": "\"11\""
     },
@@ -34750,7 +34981,7 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Misc\/MockData.swift",
       "kind": "Array",
-      "offset": 1595,
+      "offset": 1589,
       "length": 647,
       "value": "[\"Coffee Run\", \"Lunch Meeting\", \"Gym Membership\", \"Netflix Subscription\", \"Weekend Getaway\", \"Home Office Supplies\", \"Book Purchase\", \"Tech Gadgets\", \"Movie Night\", \"Hobby Supplies\", \"Date Night\", \"Grocery Haul\", \"Car Maintenance\", \"Home Decor\", \"Online Shopping\", \"Child's Education\", \"Birthday Gift\", \"Pet Care\", \"Vacation Planning\", \"Doctor's Visit\", \"Car Insurance\", \"Home Renovation\", \"Gardening\", \"Charity Donation\", \"Music Streaming\"]"
     },
@@ -35184,35 +35415,35 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/ShimmeringView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4401,
+      "offset": 4408,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/ShimmeringView.swift",
       "kind": "FloatLiteral",
-      "offset": 4546,
+      "offset": 4553,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/ShimmeringView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5342,
+      "offset": 5349,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/ShimmeringView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5381,
+      "offset": 5388,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Widgets\/ShimmeringView.swift",
       "kind": "FloatLiteral",
-      "offset": 5404,
+      "offset": 5411,
       "length": 4,
       "value": "0.25"
     },
@@ -35310,16 +35541,23 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategorySpend\/CategorySpendChartViewModel.swift",
       "kind": "Dictionary",
-      "offset": 302,
+      "offset": 299,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategorySpend\/CategorySpendChartViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 359,
+      "offset": 356,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategorySpend\/CategorySpendChartViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 500,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategorySpend\/CategorySpendChartViewModel.swift",
@@ -35387,14 +35625,14 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/BrandTile.swift",
       "kind": "BooleanLiteral",
-      "offset": 1371,
+      "offset": 1378,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/BrandTile.swift",
       "kind": "StringLiteral",
-      "offset": 4715,
+      "offset": 4717,
       "length": 4,
       "value": "\"11\""
     },
@@ -35527,56 +35765,56 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/BrandTrend\/BrandTrendsViewImpl.swift",
       "kind": "StringLiteral",
-      "offset": 952,
+      "offset": 976,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/BrandTrend\/BrandTrendsViewImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 998,
+      "offset": 1022,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/BrandTrend\/BrandTrendsViewImpl.swift",
       "kind": "Array",
-      "offset": 1148,
+      "offset": 1169,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/BrandTrend\/BrandTrendsViewImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1191,
+      "offset": 1212,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/BrandTrend\/BrandTrendsViewImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1233,
+      "offset": 1254,
       "length": 10,
       "value": "\"category\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/BrandTrend\/BrandTrendsViewImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 1357,
+      "offset": 1378,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/BrandTrend\/BrandTrendsViewImpl.swift",
       "kind": "Array",
-      "offset": 7803,
+      "offset": 7846,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/BrandTrend\/BrandTrendsViewImpl.swift",
       "kind": "StringLiteral",
-      "offset": 16060,
+      "offset": 17370,
       "length": 4,
       "value": "\"11\""
     },
@@ -35639,336 +35877,336 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1033,
+      "offset": 1063,
       "length": 14,
       "value": "\"global_tx_id\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1078,
+      "offset": 1108,
       "length": 17,
       "value": "\"raw_description\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1122,
+      "offset": 1152,
       "length": 13,
       "value": "\"category_id\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1207,
+      "offset": 1237,
       "length": 12,
       "value": "\"brand_name\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1245,
+      "offset": 1275,
       "length": 12,
       "value": "\"brand_logo\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1286,
+      "offset": 1316,
       "length": 15,
       "value": "\"currency_code\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1351,
+      "offset": 1381,
       "length": 16,
       "value": "\"rounded_amount\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1399,
+      "offset": 1429,
       "length": 18,
       "value": "\"transaction_date\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1442,
+      "offset": 1472,
       "length": 11,
       "value": "\"user_note\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1482,
+      "offset": 1512,
       "length": 16,
       "value": "\"is_brand_valid\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1526,
+      "offset": 1556,
       "length": 15,
       "value": "\"is_logo_valid\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1577,
+      "offset": 1607,
       "length": 24,
       "value": "\"user_edited_brand_name\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1633,
+      "offset": 1663,
       "length": 19,
       "value": "\"is_category_valid\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1689,
+      "offset": 1719,
       "length": 25,
       "value": "\"user_edited_category_id\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1808,
+      "offset": 1838,
       "length": 20,
       "value": "\"suggested_category\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1033,
+      "offset": 1063,
       "length": 14,
       "value": "\"global_tx_id\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1078,
+      "offset": 1108,
       "length": 17,
       "value": "\"raw_description\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1122,
+      "offset": 1152,
       "length": 13,
       "value": "\"category_id\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1207,
+      "offset": 1237,
       "length": 12,
       "value": "\"brand_name\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1245,
+      "offset": 1275,
       "length": 12,
       "value": "\"brand_logo\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1286,
+      "offset": 1316,
       "length": 15,
       "value": "\"currency_code\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1351,
+      "offset": 1381,
       "length": 16,
       "value": "\"rounded_amount\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1399,
+      "offset": 1429,
       "length": 18,
       "value": "\"transaction_date\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1442,
+      "offset": 1472,
       "length": 11,
       "value": "\"user_note\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1482,
+      "offset": 1512,
       "length": 16,
       "value": "\"is_brand_valid\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1526,
+      "offset": 1556,
       "length": 15,
       "value": "\"is_logo_valid\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1577,
+      "offset": 1607,
       "length": 24,
       "value": "\"user_edited_brand_name\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1633,
+      "offset": 1663,
       "length": 19,
       "value": "\"is_category_valid\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1689,
+      "offset": 1719,
       "length": 25,
       "value": "\"user_edited_category_id\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1808,
+      "offset": 1838,
       "length": 20,
       "value": "\"suggested_category\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 11830,
+      "offset": 11696,
       "length": 18,
       "value": "\"report_open_date\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 11880,
+      "offset": 11746,
       "length": 19,
       "value": "\"report_close_date\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 11830,
+      "offset": 11696,
       "length": 18,
       "value": "\"report_open_date\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 11880,
+      "offset": 11746,
       "length": 19,
       "value": "\"report_close_date\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 13134,
+      "offset": 13000,
       "length": 8,
       "value": "\"closed\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 13163,
+      "offset": 13029,
       "length": 10,
       "value": "\"reported\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 13193,
+      "offset": 13059,
       "length": 9,
       "value": "\"pending\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 13225,
+      "offset": 13091,
       "length": 13,
       "value": "\"in_progress\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 13258,
+      "offset": 13124,
       "length": 9,
       "value": "\"updated\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 13134,
+      "offset": 13000,
       "length": 8,
       "value": "\"closed\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 13163,
+      "offset": 13029,
       "length": 10,
       "value": "\"reported\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 13193,
+      "offset": 13059,
       "length": 9,
       "value": "\"pending\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 13225,
+      "offset": 13091,
       "length": 13,
       "value": "\"in_progress\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 13258,
+      "offset": 13124,
       "length": 9,
       "value": "\"updated\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 14292,
+      "offset": 14170,
       "length": 10,
       "value": "\"categ_id\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 14359,
+      "offset": 14237,
       "length": 11,
       "value": "\"icon_dark\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 14292,
+      "offset": 14170,
       "length": 10,
       "value": "\"categ_id\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 14359,
+      "offset": 14237,
       "length": 11,
       "value": "\"icon_dark\""
     },
@@ -35982,14 +36220,14 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategoryTrendItem.swift",
       "kind": "StringLiteral",
-      "offset": 471,
+      "offset": 468,
       "length": 13,
       "value": "\"category_id\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/CategoryTrendItem.swift",
       "kind": "StringLiteral",
-      "offset": 471,
+      "offset": 468,
       "length": 13,
       "value": "\"category_id\""
     },
@@ -35997,13 +36235,13 @@
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/LuneSDKManager.swift",
       "kind": "StringLiteral",
       "offset": 305,
-      "length": 37,
-      "value": "\"https:\/\/staging.pfm.lunedata.io\/api\""
+      "length": 24,
+      "value": "\"http:\/\/20.174.36.8\/api\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/LuneSDKManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3994,
+      "offset": 3981,
       "length": 4,
       "value": "true"
     },
@@ -36024,91 +36262,91 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/Cashflow\/CashflowChart.swift",
       "kind": "FloatLiteral",
-      "offset": 802,
+      "offset": 799,
       "length": 3,
       "value": "0.9"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/TransactionUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 513,
+      "offset": 526,
       "length": 16,
       "value": "\"is_brand_valid\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/TransactionUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 557,
+      "offset": 570,
       "length": 15,
       "value": "\"is_logo_valid\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/TransactionUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 608,
+      "offset": 621,
       "length": 24,
       "value": "\"user_edited_brand_name\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/TransactionUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 664,
+      "offset": 677,
       "length": 19,
       "value": "\"is_category_valid\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/TransactionUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 720,
+      "offset": 733,
       "length": 25,
       "value": "\"user_edited_category_id\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/TransactionUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 784,
+      "offset": 797,
       "length": 27,
       "value": "\"user_edited_category_name\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/TransactionUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 513,
+      "offset": 526,
       "length": 16,
       "value": "\"is_brand_valid\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/TransactionUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 557,
+      "offset": 570,
       "length": 15,
       "value": "\"is_logo_valid\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/TransactionUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 608,
+      "offset": 621,
       "length": 24,
       "value": "\"user_edited_brand_name\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/TransactionUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 664,
+      "offset": 677,
       "length": 19,
       "value": "\"is_category_valid\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/TransactionUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 720,
+      "offset": 733,
       "length": 25,
       "value": "\"user_edited_category_id\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/Model\/Core\/TransactionUpdate.swift",
       "kind": "StringLiteral",
-      "offset": 784,
+      "offset": 797,
       "length": 27,
       "value": "\"user_edited_category_name\""
     },
@@ -36129,14 +36367,14 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategorySpend\/CategorySpendViewModel.swift",
       "kind": "Dictionary",
-      "offset": 298,
+      "offset": 295,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/actions-runner\/_work\/LuneBank\/LuneBank\/LuneSDK\/View\/CategorySpend\/CategorySpendViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 355,
+      "offset": 352,
       "length": 5,
       "value": "false"
     },
@@ -36766,21 +37004,28 @@
     {
       "filePath": "\/Users\/lunebank-ghar\/Library\/Developer\/Xcode\/DerivedData\/LuneBank-hawtoqwnluotdagpqruiayptiyjr\/Build\/Intermediates.noindex\/ArchiveIntermediates\/LuneSDK\/IntermediateBuildFilesPath\/LuneBank.build\/Release-iphoneos\/LuneSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8677,
+      "offset": 8695,
+      "length": 33,
+      "value": "\"lune_sdk_asset_tx_logo_fallback\""
+    },
+    {
+      "filePath": "\/Users\/lunebank-ghar\/Library\/Developer\/Xcode\/DerivedData\/LuneBank-hawtoqwnluotdagpqruiayptiyjr\/Build\/Intermediates.noindex\/ArchiveIntermediates\/LuneSDK\/IntermediateBuildFilesPath\/LuneBank.build\/Release-iphoneos\/LuneSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8877,
       "length": 23,
       "value": "\"lune_sdk_asset_upload\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/Library\/Developer\/Xcode\/DerivedData\/LuneBank-hawtoqwnluotdagpqruiayptiyjr\/Build\/Intermediates.noindex\/ArchiveIntermediates\/LuneSDK\/IntermediateBuildFilesPath\/LuneBank.build\/Release-iphoneos\/LuneSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8860,
+      "offset": 9060,
       "length": 29,
       "value": "\"lune_sdk_asset_upload_white\""
     },
     {
       "filePath": "\/Users\/lunebank-ghar\/Library\/Developer\/Xcode\/DerivedData\/LuneBank-hawtoqwnluotdagpqruiayptiyjr\/Build\/Intermediates.noindex\/ArchiveIntermediates\/LuneSDK\/IntermediateBuildFilesPath\/LuneBank.build\/Release-iphoneos\/LuneSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9040,
+      "offset": 9240,
       "length": 24,
       "value": "\"lune_sdk_asset_warning\""
     }

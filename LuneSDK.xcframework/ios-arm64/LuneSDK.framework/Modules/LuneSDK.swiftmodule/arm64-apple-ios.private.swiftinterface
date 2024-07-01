@@ -270,11 +270,11 @@ extension LuneSDK.LuneField {
 public struct CategorySpend : Swift.Codable, Swift.Equatable, Swift.Identifiable {
   public let count: Swift.Int
   public let amount: Swift.Double
-  public var id: Swift.String {
+  public var id: Swift.Int {
     get
   }
   public static func == (a: LuneSDK.CategorySpend, b: LuneSDK.CategorySpend) -> Swift.Bool
-  public typealias ID = Swift.String
+  public typealias ID = Swift.Int
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -282,7 +282,7 @@ extension LuneSDK.CategorySpend {
   public init(data: Foundation.Data) throws
   public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
   public init(fromURL url: Foundation.URL) throws
-  public func with(categoryID: Swift.String? = nil, categoryDesc: Swift.String? = nil, count: Swift.Int? = nil, amount: Swift.Double? = nil, category: LuneSDK.Category? = nil) -> LuneSDK.CategorySpend
+  public func with(categoryID: Swift.Int? = nil, categoryDesc: Swift.String? = nil, count: Swift.Int? = nil, amount: Swift.Double? = nil, category: LuneSDK.Category? = nil) -> LuneSDK.CategorySpend
   public func jsonData() throws -> Foundation.Data
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
 }
@@ -345,7 +345,8 @@ extension LuneSDK.ButtonTheme {
 }
 public struct LuneResponse<T> : Swift.Codable where T : Swift.Decodable, T : Swift.Encodable {
   public var data: T?
-  public let message: Swift.String
+  public let success: Swift.Bool?
+  public let message: Swift.String?
   public var next: Swift.String?
   public var previous: Swift.String?
   public var count: Swift.Int?
@@ -356,17 +357,17 @@ extension LuneSDK.LuneResponse {
   public init(data: Foundation.Data) throws
   public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
   public init(fromURL url: Foundation.URL) throws
-  public func with(data: T? = nil, message: Swift.String? = nil, next: Swift.String? = nil, previous: Swift.String? = nil, count: Swift.Int? = nil) -> LuneSDK.LuneResponse<T>
+  public func with(data: T? = nil, success: Swift.Bool? = nil, message: Swift.String? = nil, next: Swift.String? = nil, previous: Swift.String? = nil, count: Swift.Int? = nil) -> LuneSDK.LuneResponse<T>
   public func jsonData() throws -> Foundation.Data
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
 }
 public struct CategoryBudgetSpend : Swift.Codable, Swift.Equatable, Swift.Hashable, Swift.Identifiable {
-  public var id: Swift.String {
+  public var id: Swift.Int {
     get
   }
   public static func == (a: LuneSDK.CategoryBudgetSpend, b: LuneSDK.CategoryBudgetSpend) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
-  public typealias ID = Swift.String
+  public typealias ID = Swift.Int
   public func encode(to encoder: any Swift.Encoder) throws
   public var hashValue: Swift.Int {
     get
@@ -377,7 +378,7 @@ extension LuneSDK.CategoryBudgetSpend {
   public init(data: Foundation.Data) throws
   public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
   public init(fromURL url: Foundation.URL) throws
-  public func with(categoryID: Swift.String? = nil, categoryDesc: Swift.String? = nil, budgetedAmount: Swift.Double? = nil, spentAmount: Swift.Double? = nil, transactionsCount: Swift.Int? = nil, category: LuneSDK.Category? = nil) -> LuneSDK.CategoryBudgetSpend
+  public func with(categoryID: Swift.Int? = nil, categoryDesc: Swift.String? = nil, budgetedAmount: Swift.Double? = nil, spentAmount: Swift.Double? = nil, transactionsCount: Swift.Int? = nil, category: LuneSDK.Category? = nil) -> LuneSDK.CategoryBudgetSpend
   public func jsonData() throws -> Foundation.Data
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
 }
@@ -544,7 +545,7 @@ extension LuneSDK.CategoryBudget {
   public init(data: Foundation.Data) throws
   public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
   public init(fromURL url: Foundation.URL) throws
-  public func with(categoryID: Swift.String? = nil, categoryDesc: Swift.String? = nil, budgetedAmount: Swift.Double? = nil) -> LuneSDK.CategoryBudget
+  public func with(categoryID: Swift.Int? = nil, categoryDesc: Swift.String? = nil, budgetedAmount: Swift.Double? = nil) -> LuneSDK.CategoryBudget
   public func jsonData() throws -> Foundation.Data
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
 }
@@ -623,11 +624,14 @@ public protocol LuneFieldProtocol : UIKit.UITextField {
   var inputAccessoryViewController: UIKit.UIInputViewController? { get set }
 }
 public struct BrandSpend : Swift.Codable, Swift.Equatable, Swift.Identifiable {
-  public var id: Swift.String {
+  public var id: Swift.Int {
+    get
+  }
+  public var queryId: Swift.String {
     get
   }
   public static func == (a: LuneSDK.BrandSpend, b: LuneSDK.BrandSpend) -> Swift.Bool
-  public typealias ID = Swift.String
+  public typealias ID = Swift.Int
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -635,7 +639,7 @@ extension LuneSDK.BrandSpend {
   public init(data: Foundation.Data) throws
   public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
   public init(fromURL url: Foundation.URL) throws
-  public func with(brandID: Swift.String? = nil, brandName: Swift.String? = nil, brandLogoURL: Swift.String? = nil, currencyCode: Swift.String? = nil, amount: Swift.Double? = nil, transactionCount: Swift.Int? = nil) -> LuneSDK.BrandSpend
+  public func with(brandID: Swift.Int? = nil, brandName: Swift.String? = nil, brandLogoURL: Swift.String? = nil, currencyCode: Swift.String? = nil, amount: Swift.Double? = nil, transactionCount: Swift.Int? = nil) -> LuneSDK.BrandSpend
   public func jsonData() throws -> Foundation.Data
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
   public static var emptyValue: LuneSDK.BrandSpend {
@@ -748,7 +752,7 @@ extension LuneSDK.LuneTransaction {
   public init(data: Foundation.Data) throws
   public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
   public init(fromURL url: Foundation.URL) throws
-  public func with(id: Swift.Int? = nil, transactionDate: Swift.String? = nil, userNote: Swift.String? = nil, globalTxID: Swift.String? = nil, rawDescription: Swift.String? = nil, categoryID: Swift.String? = nil, brandName: Swift.String? = nil, brandLogo: Swift.String? = nil, currencyCode: Swift.String? = nil, amount: Swift.Double? = nil, roundedAmount: Swift.Double? = nil, isBrandValid: Swift.Bool? = nil, isLogoValid: Swift.Bool? = nil, userEditedBrandName: Swift.String? = nil, isCategoryValid: Swift.Bool? = nil, userEditedCategoryId: Swift.String? = nil, tags: [Swift.String]? = nil, review: LuneSDK.Review? = nil, category: LuneSDK.Category? = nil, suggestedCategory: LuneSDK.Category? = nil) -> LuneSDK.LuneTransaction
+  public func with(id: Swift.Int? = nil, transactionDate: Swift.String? = nil, userNote: Swift.String? = nil, globalTxID: Swift.String? = nil, rawDescription: Swift.String? = nil, categoryID: Swift.Int? = nil, brandName: Swift.String? = nil, brandLogo: Swift.String? = nil, currencyCode: Swift.String? = nil, amount: Swift.Double? = nil, roundedAmount: Swift.Double? = nil, isBrandValid: Swift.Bool? = nil, isLogoValid: Swift.Bool? = nil, userEditedBrandName: Swift.String? = nil, isCategoryValid: Swift.Bool? = nil, userEditedCategoryId: Swift.Int? = nil, tags: [Swift.String]? = nil, review: LuneSDK.Review? = nil, category: LuneSDK.Category? = nil, suggestedCategory: LuneSDK.Category? = nil) -> LuneSDK.LuneTransaction
   public func jsonData() throws -> Foundation.Data
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
 }
@@ -777,7 +781,7 @@ public struct LuneInputViewContent<UITextFieldType> where UITextFieldType : Lune
   }
 }
 public class LuneSDKManager : Combine.ObservableObject {
-  public init(baseUrl: Swift.String = "https://staging.pfm.lunedata.io/api", token: Swift.String, customerId: Swift.String? = nil, localizationTableName: Swift.String? = nil)
+  public init(baseUrl: Swift.String = "http://20.174.36.8/api", token: Swift.String, customerId: Swift.String? = nil, localizationTableName: Swift.String? = nil)
   public func CategorySpendChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil) -> some SwiftUI.View
   
   public func CashflowChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil) -> some SwiftUI.View
@@ -833,7 +837,7 @@ extension LuneSDK.TransactionUpdate {
   public init(data: Foundation.Data) throws
   public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
   public init(fromURL url: Foundation.URL) throws
-  public func with(id: Swift.Int?? = nil, isBrandValid: Swift.Bool?? = nil, isLogoValid: Swift.Bool?? = nil, userEditedBrandName: Swift.String?? = nil, isCategoryValid: Swift.Bool?? = nil, userEditedCategoryId: Swift.String?? = nil, userEditedCategoryName: Swift.String?? = nil, note: Swift.String?? = nil, tags: [Swift.String]? = nil) -> LuneSDK.TransactionUpdate
+  public func with(id: Swift.Int?? = nil, isBrandValid: Swift.Bool?? = nil, isLogoValid: Swift.Bool?? = nil, userEditedBrandName: Swift.String?? = nil, isCategoryValid: Swift.Bool?? = nil, userEditedCategoryId: Swift.Int?? = nil, userEditedCategoryName: Swift.String?? = nil, note: Swift.String?? = nil, tags: [Swift.String]? = nil) -> LuneSDK.TransactionUpdate
   public func jsonData() throws -> Foundation.Data
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
   public func map() -> [Swift.String : Any]

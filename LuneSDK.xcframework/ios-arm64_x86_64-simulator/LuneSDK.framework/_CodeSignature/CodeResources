@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		fboZgGS1EMC5IJGn9lblS+G3I1E=
+		7GQO02L50pmpw3YI2Qb6KVU/NCU=
 		</data>
 		<key>Headers/LuneSDK-Swift.h</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		CI+s4EdOVsI9Eh4kTfWUxP38Nd0=
+		XsDz9L2XYDz4doRHv0zm0sDoULo=
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Mrn4E7n9QBbjG+yNxQqNfArRxRI=
+		WSVCYgHQXmdzXfkMyohI9/Fg3CM=
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Y+1jEh6i/SjEm9ZWkQ6B5NfHWIM=
+		p6HhsDLH/g9AYNT1kBXLiH8A6vs=
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Y+1jEh6i/SjEm9ZWkQ6B5NfHWIM=
+		p6HhsDLH/g9AYNT1kBXLiH8A6vs=
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		w23LV1PFisn6Jr1Br8NsphbL9FM=
+		yVPXVCFlhuUWXwNzg7foGiRG+XM=
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Mrn4E7n9QBbjG+yNxQqNfArRxRI=
+		WSVCYgHQXmdzXfkMyohI9/Fg3CM=
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		tx7s78Vpfl7bXGCrDXCwlgEw82Y=
+		gMGK9JHyHqzHS5OPGR7jpIZyg7M=
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		tx7s78Vpfl7bXGCrDXCwlgEw82Y=
+		gMGK9JHyHqzHS5OPGR7jpIZyg7M=
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+2N01UX98JNxkq8oHWY5YoHujyY=
+		7Xp4g1nojcjAPwXP8UwTAYuyCmk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,7 +107,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WqsmfpiIaKloU7SM4u2j6/lN9ey7Oqq2t8GGtjkmP0g=
+			QkYK5EB+jYzDr50zi9+irY8GWbexZqnXB++ufqv1QX8=
 			</data>
 		</dict>
 		<key>Headers/LuneSDK-Swift.h</key>
@@ -128,14 +128,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cBm/pIIecQOAlpa0IZRSiOFL2vEFsY4MhflOjKRZwuU=
+			9pUZU6Wi13oP9fctY4XwLEzG6mNTHIevAW1tiRZ5PKU=
 			</data>
 		</dict>
 		<key>Modules/LuneSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HiOB9bO8cnX/raMuMsnu7wrAVBmhX+gzVAxQokDn50s=
+			8zfPxATbRsrubSPYoC5FYUMrzcvS4bpBXf7mC/yA27Q=
 			</data>
 		</dict>
 		<key>Modules/LuneSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -149,28 +149,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HiOB9bO8cnX/raMuMsnu7wrAVBmhX+gzVAxQokDn50s=
+			8zfPxATbRsrubSPYoC5FYUMrzcvS4bpBXf7mC/yA27Q=
 			</data>
 		</dict>
 		<key>Modules/LuneSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VdszoWlxj61RT7sZZQf0qIF23ArJvgfsgMJpfMfvFNc=
+			JJj+lO4dKlhmw2RPSYICUgNKWbv6Y7pFhrhfQxlF8rw=
 			</data>
 		</dict>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cBm/pIIecQOAlpa0IZRSiOFL2vEFsY4MhflOjKRZwuU=
+			9pUZU6Wi13oP9fctY4XwLEzG6mNTHIevAW1tiRZ5PKU=
 			</data>
 		</dict>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5ubrjSob/CTfAYngefDDIDuc8VqiKDfJ1lpKUtuX7Wc=
+			Cf+s6p29KE+uu8HCt/BL0yaR6KDWAICNmVPzxNDUQuk=
 			</data>
 		</dict>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -184,14 +184,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5ubrjSob/CTfAYngefDDIDuc8VqiKDfJ1lpKUtuX7Wc=
+			Cf+s6p29KE+uu8HCt/BL0yaR6KDWAICNmVPzxNDUQuk=
 			</data>
 		</dict>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XgWkd8O0EtMTNTJP6mkFYW6jHgeLWZjm7KQAb824Y+w=
+			1Ob0pJBCnppPzhJad3SwjT6adsbJheAjbWBtGFc1Bzk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
