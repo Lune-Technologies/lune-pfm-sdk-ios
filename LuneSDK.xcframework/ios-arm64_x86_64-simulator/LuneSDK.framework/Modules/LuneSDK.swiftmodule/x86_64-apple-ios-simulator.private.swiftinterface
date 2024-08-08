@@ -752,7 +752,7 @@ extension LuneSDK.LuneTransaction {
   public init(data: Foundation.Data) throws
   public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
   public init(fromURL url: Foundation.URL) throws
-  public func with(id: Swift.Int? = nil, transactionDate: Swift.String? = nil, userNote: Swift.String? = nil, globalTxID: Swift.String? = nil, rawDescription: Swift.String? = nil, categoryID: Swift.Int? = nil, brandName: Swift.String? = nil, brandLogo: Swift.String? = nil, currencyCode: Swift.String? = nil, amount: Swift.Double? = nil, roundedAmount: Swift.Double? = nil, isBrandValid: Swift.Bool? = nil, isLogoValid: Swift.Bool? = nil, userEditedBrandName: Swift.String? = nil, isCategoryValid: Swift.Bool? = nil, userEditedCategoryId: Swift.Int? = nil, tags: [Swift.String]? = nil, review: LuneSDK.Review? = nil, category: LuneSDK.Category? = nil, suggestedCategory: LuneSDK.Category? = nil) -> LuneSDK.LuneTransaction
+  public func with(id: Swift.Int? = nil, transactionDate: Swift.String? = nil, userNote: Swift.String? = nil, globalTxID: Swift.String? = nil, rawDescription: Swift.String? = nil, categoryID: Swift.Int? = nil, brandName: Swift.String? = nil, brandLogo: Swift.String? = nil, currencyCode: Swift.String? = nil, amount: Swift.Double? = nil, roundedAmount: Swift.Double? = nil, isBrandValid: Swift.Bool? = nil, isLogoValid: Swift.Bool? = nil, userEditedBrandName: Swift.String? = nil, isCategoryValid: Swift.Bool? = nil, userEditedCategoryId: Swift.Int? = nil, userEditedCategoryName: Swift.String? = nil, tags: [Swift.String]? = nil, review: LuneSDK.Review? = nil, category: LuneSDK.Category? = nil, suggestedCategory: LuneSDK.Category? = nil) -> LuneSDK.LuneTransaction
   public func jsonData() throws -> Foundation.Data
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
 }
@@ -786,9 +786,9 @@ public class LuneSDKManager : Combine.ObservableObject {
   
   public func CashflowChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil) -> some SwiftUI.View
   
-  public func CategoryTrendChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil) -> some SwiftUI.View
+  public func CategoryTrendChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil, excludeTransfers: Swift.Bool = false) -> some SwiftUI.View
   
-  public func BrandTrendChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil) -> some SwiftUI.View
+  public func BrandTrendChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil, excludeTransfers: Swift.Bool = false) -> some SwiftUI.View
   
   public func BrandListComponent() -> some SwiftUI.View
   
