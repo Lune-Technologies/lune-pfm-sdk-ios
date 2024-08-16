@@ -5,7 +5,7 @@ setting up a `JSON` file with a schema similar to the one attached
 below. You could just download the file and modify the values you wish
 to change.
 
-[lune-config.json](https://t4627279.p.clickup-attachments.com/t4627279/5c2ae4d5-a96d-46ce-b5ac-1b38de4636c0/lune-config.json)
+[lune-config.json](assets/lune-config.json)
 
 The `JSON` file should be saved as `lune-config.json` and added to as a
 `Data Set`, with the name `LuneConfig` in your XCode project.
