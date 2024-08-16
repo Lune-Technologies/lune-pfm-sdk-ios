@@ -1,9 +1,6 @@
 # Installation
 
-There are a bunch of options to choose from when it comes to how to
-install the `LuneSDK`.
-
-Follow the instructions below for any of the options you prefer:
+There are three options to install the `LuneSDK`. Follow the instructions below for any of the options you prefer:
 
 1. [Swift Package Manager (SPM)](spm.md)
 2. [CocoaPod](cocoapods.md)

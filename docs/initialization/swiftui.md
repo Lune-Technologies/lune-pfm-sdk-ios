@@ -54,7 +54,7 @@ class MyViewModel: ObservableObject {
 }
 ```
 
-Here's a breakdown of the steps within your view-model:
+Below are the steps within your view-model:
 
 1.  Import `LuneSDK`
 2.  Instantiate a published property to hold the SDK instance. This
@@ -111,7 +111,7 @@ struct MyApp: App {
 }
 ```
 
-Here's a breakdown of the steps within your view:
+Below are the steps within your view:
 
 1.  Import `LuneSDK`
 2.  Create a getter for the published property in your view-model,

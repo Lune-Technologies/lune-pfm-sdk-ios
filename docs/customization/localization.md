@@ -1,7 +1,7 @@
 # Localization and Strings
 
 If your app is already localized, the SDK would be localized as well -
-no configurations needed. If your app is not localized, however, the SDK
+no configurations required. If your app is not localized, however, the SDK
 respects that and stays in English to preserve consistency and
 uniformity across your app.
 
