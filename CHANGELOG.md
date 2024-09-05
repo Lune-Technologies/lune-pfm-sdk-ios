@@ -5,6 +5,14 @@ All notable changes to `📦 LuneSDK` will be documented in this file.
 
 ---
 
+## 0.5.0 - 2024-09-05
+
+### [0.5.0](https://github.com/Lune-Technologies/LuneBank/compare/v0.4.0...v0.5.0) (2024-09-05)
+
+##### Features
+
+* 📢 Add Obj-c callbacks ([442f0e8](https://github.com/Lune-Technologies/LuneBank/commit/442f0e84e61a367d602f92864d8ba6e06864fedf))
+
 ## 0.4.0 - 2024-08-08
 
 ### [0.4.0](https://github.com/Lune-Technologies/LuneBank/compare/v0.3.4...v0.4.0) (2024-08-08)
