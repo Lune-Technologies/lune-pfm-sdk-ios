@@ -5,6 +5,21 @@ All notable changes to `📦 LuneSDK` will be documented in this file.
 
 ---
 
+## 0.6.0 - 2024-09-12
+
+### [0.6.0](https://github.com/Lune-Technologies/LuneBank/compare/v0.5.0...v0.6.0) (2024-09-12)
+
+##### Bug Fixes
+
+* 🔥 Remove trailing `.00` after approximating decimal values ([0cd4bc3](https://github.com/Lune-Technologies/LuneBank/commit/0cd4bc3fb1e8da25dcceef87b6082abb22d91075))
+* 🗓️ Add missing row to datepicker ([e63cf29](https://github.com/Lune-Technologies/LuneBank/commit/e63cf2978355add6406be14115fd77698032adde))
+* 🚚 move search param to end of param sequence ([67dec03](https://github.com/Lune-Technologies/LuneBank/commit/67dec03738215ffc5e974c04fe7e483145b7d356))
+
+##### Features
+
+* ⛓️‍💥 Add min and max constraints to date picker ([fc26b61](https://github.com/Lune-Technologies/LuneBank/commit/fc26b615f3fb41b6c1ae22b59888de02999b1e88))
+* 🥸 Grey out month switcher when constrainst are reached ([56ec032](https://github.com/Lune-Technologies/LuneBank/commit/56ec032d1ac3687ca404ff5ccb975eefad3c7200))
+
 ## 0.5.0 - 2024-09-05
 
 ### [0.5.0](https://github.com/Lune-Technologies/LuneBank/compare/v0.4.0...v0.5.0) (2024-09-05)
