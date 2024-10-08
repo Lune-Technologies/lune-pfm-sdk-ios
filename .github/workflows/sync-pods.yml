@@ -1,0 +1,15 @@
+# on push tags to master branch, it will run pod lib update and push to cocoapods
+name: Sync Pods
+on:
+  push:
+    tags:
+      - "v*"
+jobs:
+  build:
+    runs-on: [self-hosted, macOS]
+    steps:
+      - uses: wlixcc/pod-lib-update-action@1.0.0
+        name: pod lib update
+        with:
+          spec_repo_url: https://github.com/Lune-Technologies/lune-pfm-sdk-ios.git
+          spec_file_path: /LuneSDK.podspec
