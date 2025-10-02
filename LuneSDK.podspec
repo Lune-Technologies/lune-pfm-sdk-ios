@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LuneSDK"
-  spec.version      = "0.6.6"
+  spec.version      = "0.6.7"
   spec.summary      = "📦 Embed Lune enrichment views into your iOS apps"
 
   # This description is used to generate tags and improve search results.
@@ -52,7 +52,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Lune Technologies" => "samuel@lunedata.io" }
+  spec.author             = { "Lune Technologies" => "eslam.ali@lunedata.io" }
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

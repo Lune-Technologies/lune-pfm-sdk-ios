@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		J88ONYEg6zjhY86/JDyCBZOi+1U=
+		xEVW6Jwa+tZ3XLZyRYEGRuFnacg=
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		J88ONYEg6zjhY86/JDyCBZOi+1U=
+		xEVW6Jwa+tZ3XLZyRYEGRuFnacg=
 		</data>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -86,7 +86,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jjPucNcH0rM/w2Mfjn2+nnx2XjI=
+			XtoPiM1PGRSSOtjPfe2Ern63rO8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -128,7 +128,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ta3BB5hkaNy8HdSkDZ/k+m8b5HCrPDWWk0pdLZX9e2w=
+			BJTRF82bMduwjfVi3eglJOPVAwzSuCXdqpMUz6Tt+oI=
 			</data>
 		</dict>
 		<key>Modules/LuneSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -163,7 +163,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ta3BB5hkaNy8HdSkDZ/k+m8b5HCrPDWWk0pdLZX9e2w=
+			BJTRF82bMduwjfVi3eglJOPVAwzSuCXdqpMUz6Tt+oI=
 			</data>
 		</dict>
 		<key>Modules/LuneSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -223,7 +223,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mrVNhiI5EPE7pAKa+gckVVKqgV2urqAanoedTvgw5lo=
+			GRfpkF2Q+qzXLTg1RG7rDjA7Z3A6sefvtd0aeO1N4Jk=
 			</data>
 			<key>optional</key>
 			<true/>
