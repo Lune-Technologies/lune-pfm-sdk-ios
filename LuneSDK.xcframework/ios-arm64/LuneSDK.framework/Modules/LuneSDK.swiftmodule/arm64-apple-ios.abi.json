@@ -26685,56 +26685,56 @@
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Config\/ComponentSpecific\/LCExpenseExtensions.swift",
       "kind": "BooleanLiteral",
-      "offset": 736,
+      "offset": 764,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Config\/ComponentSpecific\/LCExpenseExtensions.swift",
       "kind": "BooleanLiteral",
-      "offset": 775,
+      "offset": 807,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Config\/ComponentSpecific\/LCExpenseExtensions.swift",
       "kind": "Array",
-      "offset": 819,
+      "offset": 855,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Config\/ComponentSpecific\/LCExpenseExtensions.swift",
       "kind": "BooleanLiteral",
-      "offset": 867,
+      "offset": 907,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Config\/ComponentSpecific\/LCExpenseExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 1406,
+      "offset": 1492,
       "length": 17,
       "value": "\"show-top-amount\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Config\/ComponentSpecific\/LCExpenseExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 1448,
+      "offset": 1540,
       "length": 18,
       "value": "\"use-tile-divider\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Config\/ComponentSpecific\/LCExpenseExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 1495,
+      "offset": 1593,
       "length": 21,
       "value": "\"excluded-categories\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Config\/ComponentSpecific\/LCExpenseExtensions.swift",
       "kind": "StringLiteral",
-      "offset": 1557,
+      "offset": 1656,
       "length": 29,
       "value": "\"show-transaction-disclaimer\""
     },
@@ -32033,44 +32033,58 @@
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Config\/ComponentSpecific\/LCTransactionList.swift",
       "kind": "BooleanLiteral",
-      "offset": 798,
+      "offset": 865,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Config\/ComponentSpecific\/LCTransactionList.swift",
       "kind": "BooleanLiteral",
-      "offset": 843,
+      "offset": 916,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Config\/ComponentSpecific\/LCTransactionList.swift",
       "kind": "BooleanLiteral",
-      "offset": 872,
+      "offset": 951,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Config\/ComponentSpecific\/LCTransactionList.swift",
+      "kind": "BooleanLiteral",
+      "offset": 994,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Config\/ComponentSpecific\/LCTransactionList.swift",
       "kind": "StringLiteral",
-      "offset": 1418,
+      "offset": 1628,
       "length": 33,
       "value": "\"show-trailing-rounded-indicator\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Config\/ComponentSpecific\/LCTransactionList.swift",
       "kind": "StringLiteral",
-      "offset": 1486,
+      "offset": 1702,
       "length": 29,
       "value": "\"show-trailing-category-icon\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Config\/ComponentSpecific\/LCTransactionList.swift",
       "kind": "StringLiteral",
-      "offset": 1534,
+      "offset": 1756,
       "length": 11,
       "value": "\"show-time\""
+    },
+    {
+      "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Config\/ComponentSpecific\/LCTransactionList.swift",
+      "kind": "StringLiteral",
+      "offset": 1799,
+      "length": 21,
+      "value": "\"show-fallback-title\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Widgets\/CategoryPickerTile.swift",
@@ -33482,84 +33496,84 @@
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 9146,
+      "offset": 9118,
       "length": 18,
       "value": "\"report_open_date\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 9190,
+      "offset": 9162,
       "length": 19,
       "value": "\"report_close_date\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 10254,
+      "offset": 10226,
       "length": 8,
       "value": "\"closed\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 10280,
+      "offset": 10252,
       "length": 10,
       "value": "\"reported\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 10307,
+      "offset": 10279,
       "length": 9,
       "value": "\"pending\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 10336,
+      "offset": 10308,
       "length": 13,
       "value": "\"in_progress\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 10366,
+      "offset": 10338,
       "length": 9,
       "value": "\"updated\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 11285,
+      "offset": 11257,
       "length": 10,
       "value": "\"categ_id\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 11340,
+      "offset": 11312,
       "length": 11,
       "value": "\"icon_dark\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "IntegerLiteral",
-      "offset": 12676,
+      "offset": 12648,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 12686,
+      "offset": 12658,
       "length": 8,
       "value": "\"Dining\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/Model\/Core\/LuneTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 12702,
+      "offset": 12674,
       "length": 73,
       "value": "\"https:\/\/pics.freeicons.io\/uploads\/icons\/png\/8041930811691582254-512.png\""
     },
