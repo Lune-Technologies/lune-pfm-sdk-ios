@@ -4,6 +4,32 @@ All notable changes to `📦 LuneSDK` will be documented in this file.
 
 
 ---
+## 0.7.0 - 2025-12-09
+
+### [0.6.3](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.6.9...v0.7.0) (2024-12-09)
+
+#### Add category for default transaction title for Un-Enriched Transactions
+
+---
+## 0.6.9 - 2025-10-10
+
+### [0.6.3](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.6.7...v0.6.9) (2025-10-10)
+
+#### Add Default transaction title for Un-Enriched Transactions
+
+---
+## 0.6.7 - 2025-10-02
+
+### [0.6.3](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.6.6...v0.6.7) (2025-10-02)
+
+#### Fix amount view bug
+
+---
+## 0.6.3 - 2024-09-26
+
+### [0.6.3](https://github.com/Lune-Technologies/LuneBank/compare/v0.6.2...v0.6.3) (2024-09-26)
+
+#### Bug Fixes
 
 ## 0.6.3 - 2024-09-26
 
