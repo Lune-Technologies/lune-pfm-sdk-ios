@@ -4,9 +4,9 @@ All notable changes to `📦 LuneSDK` will be documented in this file.
 
 
 ---
-## 0.7.0 - 2025-12-09
+## 0.7.1 - 2025-12-10
 
-### [0.6.3](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.6.9...v0.7.0) (2024-12-09)
+### [0.6.3](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.6.9...v0.7.0) (2024-12-10)
 
 #### Add category for default transaction title for Un-Enriched Transactions
 

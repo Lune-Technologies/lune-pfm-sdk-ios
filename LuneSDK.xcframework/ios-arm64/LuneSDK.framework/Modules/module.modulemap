@@ -1,0 +1,11 @@
+framework module LuneSDK {
+  umbrella header "LuneSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module LuneSDK.Swift {
+  header "LuneSDK-Swift.h"
+  requires objc
+}
