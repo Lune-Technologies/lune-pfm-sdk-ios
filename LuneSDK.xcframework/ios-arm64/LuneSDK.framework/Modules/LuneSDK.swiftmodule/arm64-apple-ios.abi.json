@@ -26531,49 +26531,49 @@
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionDetails\/TransactionDetailViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 290,
+      "offset": 321,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionDetails\/TransactionDetailViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 329,
+      "offset": 363,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionDetails\/TransactionDetailViewModel.swift",
       "kind": "Array",
-      "offset": 370,
+      "offset": 411,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionDetails\/TransactionDetailViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 453,
+      "offset": 508,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionDetails\/TransactionDetailViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 502,
+      "offset": 564,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionDetails\/TransactionDetailViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 534,
+      "offset": 603,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/TransactionDetails\/TransactionDetailViewModel.swift",
       "kind": "Array",
-      "offset": 570,
+      "offset": 642,
       "length": 2,
       "value": "[]"
     },
@@ -28701,56 +28701,56 @@
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/BrandTrend\/Overview\/BrandTrendViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 176,
+      "offset": 189,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/BrandTrend\/Overview\/BrandTrendViewModel.swift",
       "kind": "Array",
-      "offset": 264,
+      "offset": 289,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/BrandTrend\/Overview\/BrandTrendViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 307,
+      "offset": 338,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/BrandTrend\/Overview\/BrandTrendViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 356,
+      "offset": 389,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/BrandTrend\/Overview\/BrandTrendViewModel.swift",
       "kind": "Array",
-      "offset": 404,
+      "offset": 443,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/BrandTrend\/Overview\/BrandTrendViewModel.swift",
       "kind": "Array",
-      "offset": 554,
+      "offset": 617,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/BrandTrend\/Overview\/BrandTrendViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 618,
+      "offset": 689,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/BrandTrend\/Overview\/BrandTrendViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1983,
+      "offset": 2192,
       "length": 1,
       "value": "1"
     },
@@ -29716,44 +29716,37 @@
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 219,
+      "offset": 232,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 262,
+      "offset": 277,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 303,
+      "offset": 320,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 353,
+      "offset": 376,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 396,
+      "offset": 421,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
-      "kind": "Array",
-      "offset": 483,
-      "length": 2,
-      "value": "[]"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
@@ -29764,78 +29757,85 @@
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
+      "kind": "Array",
+      "offset": 559,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 907,
+      "offset": 992,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 940,
+      "offset": 1029,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 976,
+      "offset": 1069,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1478,
+      "offset": 1675,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1507,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
-      "kind": "Dictionary",
-      "offset": 3428,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 3454,
-      "length": 5,
-      "value": "\"GET\""
-    },
-    {
-      "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3481,
+      "offset": 1704,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
       "kind": "Dictionary",
-      "offset": 5547,
+      "offset": 3773,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5573,
+      "offset": 3803,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5600,
+      "offset": 3834,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
+      "kind": "Dictionary",
+      "offset": 6571,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 6601,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Common\/Views\/LuneViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6632,
       "length": 5,
       "value": "false"
     },
@@ -30423,133 +30423,133 @@
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/Overview\/TransactionListViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 246,
+      "offset": 263,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/Overview\/TransactionListViewModel.swift",
       "kind": "Array",
-      "offset": 322,
+      "offset": 345,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/Overview\/TransactionListViewModel.swift",
       "kind": "Array",
-      "offset": 476,
+      "offset": 508,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/Overview\/TransactionListViewModel.swift",
       "kind": "Array",
-      "offset": 533,
+      "offset": 568,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/Overview\/TransactionListViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 611,
+      "offset": 652,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/Overview\/TransactionListViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 684,
+      "offset": 731,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/Overview\/TransactionListViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 844,
+      "offset": 918,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/Overview\/TransactionListViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 887,
+      "offset": 964,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/Overview\/TransactionListViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1086,
+      "offset": 1178,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/Overview\/TransactionListViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1169,
+      "offset": 1267,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/Overview\/TransactionListViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1253,
+      "offset": 1357,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/Overview\/TransactionListViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1392,
+      "offset": 1624,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/Overview\/TransactionListViewModel.swift",
       "kind": "Array",
-      "offset": 1559,
+      "offset": 1833,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/Overview\/TransactionListViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1754,
+      "offset": 2098,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/Overview\/TransactionListViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2658,
+      "offset": 3335,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/Overview\/TransactionListViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3147,
+      "offset": 3902,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/Overview\/TransactionListViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5920,
+      "offset": 8446,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/Overview\/TransactionListViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 7574,
+      "offset": 10286,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Transactions\/Overview\/TransactionListViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 9026,
+      "offset": 11977,
       "length": 5,
       "value": "false"
     },
@@ -31606,35 +31606,35 @@
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/CategoryTrend\/Overview\/CategoryTrendViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 237,
+      "offset": 252,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/CategoryTrend\/Overview\/CategoryTrendViewModel.swift",
       "kind": "Array",
-      "offset": 294,
+      "offset": 315,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/CategoryTrend\/Overview\/CategoryTrendViewModel.swift",
       "kind": "Array",
-      "offset": 339,
+      "offset": 366,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/CategoryTrend\/Overview\/CategoryTrendViewModel.swift",
       "kind": "Array",
-      "offset": 489,
+      "offset": 540,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/CategoryTrend\/Overview\/CategoryTrendViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 553,
+      "offset": 612,
       "length": 4,
       "value": "true"
     },
@@ -32012,21 +32012,21 @@
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/BrandList\/BrandListViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 174,
+      "offset": 187,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/BrandList\/BrandListViewModel.swift",
       "kind": "Array",
-      "offset": 224,
+      "offset": 243,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/BrandList\/BrandListViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 474,
+      "offset": 535,
       "length": 5,
       "value": "false"
     },
@@ -32817,42 +32817,42 @@
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Budget\/Overview\/BudgetViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 258,
+      "offset": 284,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Budget\/Overview\/BudgetViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 304,
+      "offset": 333,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Budget\/Overview\/BudgetViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 353,
+      "offset": 389,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Budget\/Overview\/BudgetViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 397,
+      "offset": 436,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Budget\/Overview\/BudgetViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 438,
+      "offset": 480,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/eslamali\/Desktop\/Eslam\/Lune\/LuneBank\/LuneSDK\/View\/Budget\/Overview\/BudgetViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 516,
+      "offset": 581,
       "length": 4,
       "value": "true"
     },

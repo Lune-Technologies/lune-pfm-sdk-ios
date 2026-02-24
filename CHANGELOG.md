@@ -2,11 +2,17 @@
 
 All notable changes to `📦 LuneSDK` will be documented in this file.
 
+---
+## 0.7.4 - 2026-2-24
+
+### [0.6.3](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.7.1...v0.7.4) (2025-2-24)
+
+#### Fix: Resolved SwiftUI Exclusivity memory in custom property wrappers 
 
 ---
 ## 0.7.1 - 2025-12-10
 
-### [0.6.3](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.7.0...v0.7.1) (2024-12-10)
+### [0.6.3](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.7.0...v0.7.1) (2025-12-10)
 
 #### Add category for default transaction title for Un-Enriched Transactions
 
