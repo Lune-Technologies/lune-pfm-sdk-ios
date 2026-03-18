@@ -5,7 +5,7 @@ All notable changes to `📦 LuneSDK` will be documented in this file.
 ---
 ## 0.7.6 - 2026-3-18
 
-### [0.6.3](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.7.4...v0.7.6) (2026-3-18)
+### [0.6.3](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.7.4...v0.7.8) (2026-3-18)
 
 #### Fix: Scrolling issue in some views for newest iOS Version  
 
