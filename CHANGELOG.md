@@ -3,9 +3,16 @@
 All notable changes to `📦 LuneSDK` will be documented in this file.
 
 ---
+## 0.7.6 - 2026-3-18
+
+### [0.6.3](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.7.4...v0.7.6) (2026-3-18)
+
+#### Fix: Scrolling issue in some views for newest iOS Version  
+
+---
 ## 0.7.4 - 2026-2-24
 
-### [0.6.3](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.7.1...v0.7.4) (2025-2-24)
+### [0.6.3](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.7.1...v0.7.4) (2026-2-24)
 
 #### Fix: Resolved SwiftUI Exclusivity memory in custom property wrappers 
 

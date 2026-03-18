@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name LuneSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Charts
 import Combine
 import DeveloperToolsSupport
@@ -32,23 +32,47 @@ extension LuneSDK.LuneField {
 extension LuneSDK.LuneField.Configuration {
   public func value(updateViewValue: @escaping (_ textField: UITextFieldType) -> Swift.Void, onViewValueChanged: @escaping (_ textField: UITextFieldType) -> Swift.Void) -> LuneSDK.LuneField<UITextFieldType>.Configuration
   public func value(text: SwiftUICore.Binding<Swift.String>) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #if compiler(>=5.3) && $NonescapableTypes
   public func value(text: SwiftUICore.Binding<Swift.String>, onFieldValueChanged: ((_ textField: UITextFieldType) -> Swift.Void)?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
   @available(iOS 15.0, *)
   public func value<F>(value: SwiftUICore.Binding<F.FormatInput>, format: F) -> LuneSDK.LuneField<UITextFieldType>.Configuration where F : Foundation.ParseableFormatStyle, F.FormatOutput == Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 15.0, *)
   public func value<F>(value: SwiftUICore.Binding<F.FormatInput?>, format: F) -> LuneSDK.LuneField<UITextFieldType>.Configuration where F : Foundation.ParseableFormatStyle, F.FormatOutput == Swift.String
+  #endif
   public func value<V>(value: SwiftUICore.Binding<V>, formatter: Foundation.Formatter) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #if compiler(>=5.3) && $NonescapableTypes
   public func value<V>(value: SwiftUICore.Binding<V?>, formatter: Foundation.Formatter) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func allowEmoji(_ shouldAllow: Swift.Bool?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func placeholder(_ placeholder: Swift.String?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func font(_ font: UIKit.UIFont?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func textColor(_ color: SwiftUICore.Color?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func textAlignment(_ textAlignment: UIKit.NSTextAlignment?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func clearsOnBeginEditing(_ clearsOnBeginEditing: Swift.Bool?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func clearsOnInsertion(_ clearsOnInsertion: Swift.Bool?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func clearButtonMode(_ clearButtonMode: UIKit.UITextField.ViewMode?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
   public func focused(_ binding: SwiftUICore.Binding<Swift.Bool>) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #if compiler(>=5.3) && $NonescapableTypes
   public func focused<Value>(_ binding: SwiftUICore.Binding<Value?>, equals value: Value?) -> LuneSDK.LuneField<UITextFieldType>.Configuration where Value : Swift.Hashable
+  #endif
   public func stretches(horizontal: Swift.Bool, vertical: Swift.Bool) -> LuneSDK.LuneField<UITextFieldType>.Configuration
   public func inputView(content: LuneSDK.LuneInputViewContent<UITextFieldType>) -> LuneSDK.LuneField<UITextFieldType>.Configuration
   public func inputAccessoryView(content: LuneSDK.LuneInputViewContent<UITextFieldType>) -> LuneSDK.LuneField<UITextFieldType>.Configuration
@@ -75,17 +99,25 @@ extension Swift.String : Swift.Identifiable {
 public enum SaveFrequency : Swift.String, Swift.Codable, Swift.CodingKey, Swift.Hashable, Swift.CaseIterable {
   case monthly
   case weekly
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(stringValue: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(intValue: Swift.Int)
+  #endif
   public typealias AllCases = [LuneSDK.SaveFrequency]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [LuneSDK.SaveFrequency] {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var intValue: Swift.Int? {
     get
   }
+  #endif
   public var rawValue: Swift.String {
     get
   }
@@ -106,18 +138,26 @@ public enum BudgetRecurrenceOption : Swift.String, Swift.Identifiable, Swift.Cod
   public var id: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(stringValue: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(intValue: Swift.Int)
+  #endif
   public typealias AllCases = [LuneSDK.BudgetRecurrenceOption]
   public typealias ID = Swift.String
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [LuneSDK.BudgetRecurrenceOption] {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var intValue: Swift.Int? {
     get
   }
+  #endif
   public var rawValue: Swift.String {
     get
   }
@@ -178,8 +218,12 @@ extension LuneSDK.TagField {
   @_Concurrency.MainActor @preconcurrency public var title: Swift.String?
   @_Concurrency.MainActor @preconcurrency public var subTitle: Swift.String?
   @_Concurrency.MainActor @preconcurrency public var style: LuneSDK.AlertToast.AlertStyle?
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(displayMode: LuneSDK.AlertToast.DisplayMode = .alert, type: LuneSDK.AlertToast.AlertType, title: Swift.String? = nil, subTitle: Swift.String? = nil, style: LuneSDK.AlertToast.AlertStyle? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(displayMode: LuneSDK.AlertToast.DisplayMode, type: LuneSDK.AlertToast.AlertType, title: Swift.String? = nil)
+  #endif
   @_Concurrency.MainActor @preconcurrency public var banner: some SwiftUICore.View {
     get
   }
@@ -205,8 +249,10 @@ extension LuneSDK.TagField {
   public typealias Body = @_opaqueReturnTypeOf("$s7LuneSDK18AlertToastModifierV4body7contentQr7SwiftUI05_ViewE8_ContentVyACG_tF", 0) __
 }
 extension SwiftUICore.View {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func toast(isPresenting: SwiftUICore.Binding<Swift.Bool>, duration: Swift.Double = 2, tapToDismiss: Swift.Bool = true, offsetY: CoreFoundation.CGFloat = 0, alert: @escaping () -> LuneSDK.AlertToast, onTap: (() -> Swift.Void)? = nil, completion: (() -> Swift.Void)? = nil) -> some SwiftUICore.View
   
+  #endif
 }
 @propertyWrapper @_Concurrency.MainActor @preconcurrency public struct StateObject<ObjectType> : SwiftUICore.DynamicProperty where ObjectType : Combine.ObservableObject, ObjectType.ObjectWillChangePublisher == Combine.ObservableObjectPublisher {
   @_Concurrency.MainActor @preconcurrency public var wrappedValue: ObjectType {
@@ -225,15 +271,25 @@ extension SwiftUICore.View {
   public typealias Body = @_opaqueReturnTypeOf("$s7LuneSDK11BottomSheetV4bodyQrvp", 0) __<Content>
 }
 @objc public class LuneSDKObjcManager : ObjectiveC.NSObject, Combine.ObservableObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(baseUrl: Swift.String = "https://staging.pfm.lunedata.io/api", token: Swift.String, localizationTableName: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func CategorySpendChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil) -> UIKit.UIViewController
+  #endif
   @objc public func BrandListComponent() -> UIKit.UIViewController
   @objc public func TransactionListComponent() -> UIKit.UIViewController
   @objc public func BudgetComponent() -> UIKit.UIViewController
   @objc public func CashflowComponent() -> UIKit.UIViewController
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func CashflowChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil) -> UIKit.UIViewController
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func CategoryTrendChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil, excludeTransfers: Swift.Bool = false) -> UIKit.UIViewController
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func BrandTrendChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil, excludeTransfers: Swift.Bool = false) -> UIKit.UIViewController
+  #endif
   @objc public func CategorySpendListComponent() -> UIKit.UIViewController
   @objc public func TransactionDetailComponent(id: Swift.String, withNotes: Swift.Bool = true) -> UIKit.UIViewController
   @objc public func BrandTrendsComponent() -> UIKit.UIViewController
@@ -243,7 +299,9 @@ extension SwiftUICore.View {
   @objc public func setUpSuccessNotifier(_ notifier: @escaping (Swift.String) -> Swift.Void)
   @objc public func setUpErrorNotifier(_ notifier: @escaping (Swift.String) -> Swift.Void)
   @objc public func setUpErrorLogger(_ logger: @escaping (LuneSDK.LuneError) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func setupRefreshCallback(_ callback: ((@escaping (Swift.String?) -> Swift.Void) -> Swift.Void)?)
+  #endif
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
@@ -283,9 +341,13 @@ extension LuneSDK.BudgetCategoryUpdate {
   public init(data: Foundation.Data) throws
   public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
   public init(fromURL url: Foundation.URL) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   public func with(categoryId: Swift.Int? = nil, budgetedAmount: Swift.Double? = nil) -> LuneSDK.BudgetCategoryUpdate
+  #endif
   public func jsonData() throws -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+  #endif
 }
 public struct CategorySpend : Swift.Codable, Swift.Equatable, Swift.Identifiable {
   public let count: Swift.Int
@@ -302,25 +364,37 @@ extension LuneSDK.CategorySpend {
   public init(data: Foundation.Data) throws
   public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
   public init(fromURL url: Foundation.URL) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   public func with(categoryID: Swift.Int? = nil, categoryDesc: Swift.String? = nil, count: Swift.Int? = nil, amount: Swift.Double? = nil, category: LuneSDK.Category? = nil) -> LuneSDK.CategorySpend
+  #endif
   public func jsonData() throws -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+  #endif
 }
 
 public enum SavingAllocationType : Swift.String, Swift.Codable, Swift.CodingKey, Swift.Hashable, Swift.CaseIterable {
   case equal
   case percentage
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(stringValue: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(intValue: Swift.Int)
+  #endif
   public typealias AllCases = [LuneSDK.SavingAllocationType]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [LuneSDK.SavingAllocationType] {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var intValue: Swift.Int? {
     get
   }
+  #endif
   public var rawValue: Swift.String {
     get
   }
@@ -342,9 +416,13 @@ extension LuneSDK.LuneResponse {
   public init(data: Foundation.Data) throws
   public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
   public init(fromURL url: Foundation.URL) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   public func with(data: T? = nil, success: Swift.Bool? = nil, message: Swift.String? = nil, next: Swift.String? = nil, previous: Swift.String? = nil, count: Swift.Int? = nil) -> LuneSDK.LuneResponse<T>
+  #endif
   public func jsonData() throws -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+  #endif
 }
 public struct BudgetCategory : Swift.Codable, Swift.Equatable, Swift.Hashable, Swift.Identifiable {
   public var id: Swift.Int {
@@ -363,9 +441,13 @@ extension LuneSDK.BudgetCategory {
   public init(data: Foundation.Data) throws
   public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
   public init(fromURL url: Foundation.URL) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   public func with(budgetedAmount: Swift.Double? = nil, spentAmount: Swift.Double? = nil, transactionsCount: Swift.Int? = nil, category: LuneSDK.Category? = nil) -> LuneSDK.BudgetCategory
+  #endif
   public func jsonData() throws -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+  #endif
 }
 @_Concurrency.MainActor @preconcurrency public struct SVGView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
@@ -389,26 +471,38 @@ extension LuneSDK.LuneTokenResponse {
   public init(data: Foundation.Data) throws
   public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
   public init(fromURL url: Foundation.URL) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   public func with(refresh: Swift.String? = nil, access: Swift.String? = nil) -> LuneSDK.LuneTokenResponse
+  #endif
   public func jsonData() throws -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+  #endif
 }
 public enum GoalSettingStage : Swift.String, Swift.Codable, Swift.CodingKey, Swift.Hashable, Swift.CaseIterable {
   case type
   case plan
   case summary
   case feedback
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(stringValue: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(intValue: Swift.Int)
+  #endif
   public typealias AllCases = [LuneSDK.GoalSettingStage]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [LuneSDK.GoalSettingStage] {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var intValue: Swift.Int? {
     get
   }
+  #endif
   public var rawValue: Swift.String {
     get
   }
@@ -425,7 +519,9 @@ extension LuneSDK.Cashflow {
   public init(data: Foundation.Data) throws
   public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
   public init(fromURL url: Foundation.URL) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   public func with(totalSpend: Swift.Double? = nil, totalIncome: Swift.Double? = nil, startDate: Swift.String? = nil, endDate: Swift.String? = nil) -> LuneSDK.Cashflow
+  #endif
   public var difference: Swift.Double {
     get
   }
@@ -436,7 +532,9 @@ extension LuneSDK.Cashflow {
     get
   }
   public func jsonData() throws -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+  #endif
   public var expenseDatePickerHeader: LuneSDK.DatePickerHeader {
     get
   }
@@ -455,7 +553,9 @@ extension LuneSDK.Cashflow {
   public typealias Coordinator = Swift.Void
 }
 public struct LocaleFont : Swift.Codable {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(regular: Swift.String, ultraLight: Swift.String? = nil, light: Swift.String? = nil, thin: Swift.String? = nil, medium: Swift.String? = nil, semibold: Swift.String? = nil, bold: Swift.String? = nil, heavy: Swift.String? = nil)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -463,9 +563,13 @@ extension LuneSDK.LocaleFont {
   public init(data: Foundation.Data) throws
   public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
   public init(fromURL url: Foundation.URL) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   public func with(regular: Swift.String? = nil, ultraLight: Swift.String? = nil, light: Swift.String? = nil, thin: Swift.String? = nil, medium: Swift.String? = nil, semibold: Swift.String? = nil, bold: Swift.String? = nil, heavy: Swift.String? = nil) -> LuneSDK.LocaleFont
+  #endif
   public func jsonData() throws -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+  #endif
 }
 public struct DatePickerHeader {
 }
@@ -477,17 +581,25 @@ public enum SavingsRoundAnchor : Swift.String, Swift.Codable, Swift.CodingKey, S
   case five
   case ten
   case twenty
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(stringValue: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(intValue: Swift.Int)
+  #endif
   public typealias AllCases = [LuneSDK.SavingsRoundAnchor]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [LuneSDK.SavingsRoundAnchor] {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var intValue: Swift.Int? {
     get
   }
+  #endif
   public var rawValue: Swift.String {
     get
   }
@@ -496,16 +608,22 @@ public enum SavingsRoundAnchor : Swift.String, Swift.Codable, Swift.CodingKey, S
   }
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class BaseLuneField : UIKit.UITextField {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open var inputViewController: UIKit.UIInputViewController? {
     @objc get
     @objc set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open var inputAccessoryViewController: UIKit.UIInputViewController? {
     @objc get
     @objc set
   }
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 extension LuneSDK.BaseLuneField : LuneSDK.LuneFieldProtocol {
@@ -518,7 +636,9 @@ extension LuneSDK.BaseLuneField : LuneSDK.LuneFieldProtocol {
 }
 @propertyWrapper public struct NullCodable<Wrapped> {
   public var wrappedValue: Wrapped?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(wrappedValue: Wrapped?)
+  #endif
 }
 extension LuneSDK.NullCodable : Swift.Encodable where Wrapped : Swift.Encodable {
   public func encode(to encoder: any Swift.Encoder) throws
@@ -536,8 +656,12 @@ extension Swift.KeyedDecodingContainer {
 }
 
 public protocol LuneFieldProtocol : UIKit.UITextField {
+  #if compiler(>=5.3) && $NonescapableTypes
   var inputViewController: UIKit.UIInputViewController? { get set }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var inputAccessoryViewController: UIKit.UIInputViewController? { get set }
+  #endif
 }
 public struct BrandSpend : Swift.Codable, Swift.Equatable, Swift.Identifiable {
   public var id: Swift.Int {
@@ -555,9 +679,13 @@ extension LuneSDK.BrandSpend {
   public init(data: Foundation.Data) throws
   public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
   public init(fromURL url: Foundation.URL) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   public func with(brandID: Swift.Int? = nil, brandName: Swift.String? = nil, brandLogoURL: Swift.String? = nil, currencyCode: Swift.String? = nil, amount: Swift.Double? = nil, transactionCount: Swift.Int? = nil) -> LuneSDK.BrandSpend
+  #endif
   public func jsonData() throws -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+  #endif
   public static var emptyValue: LuneSDK.BrandSpend {
     get
   }
@@ -566,17 +694,25 @@ extension LuneSDK.BrandSpend {
 public enum PlanType : Swift.String, Swift.Codable, Swift.CodingKey, Swift.Hashable, Swift.CaseIterable {
   case date
   case amount
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(stringValue: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(intValue: Swift.Int)
+  #endif
   public typealias AllCases = [LuneSDK.PlanType]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [LuneSDK.PlanType] {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var intValue: Swift.Int? {
     get
   }
+  #endif
   public var rawValue: Swift.String {
     get
   }
@@ -585,7 +721,9 @@ public enum PlanType : Swift.String, Swift.Codable, Swift.CodingKey, Swift.Hasha
   }
 }
 public struct FontConfig : Swift.Codable {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(latin: LuneSDK.LocaleFont, arabic: LuneSDK.LocaleFont? = nil, greek: LuneSDK.LocaleFont? = nil, cyrillic: LuneSDK.LocaleFont? = nil, hebrew: LuneSDK.LocaleFont? = nil, chinese: LuneSDK.LocaleFont? = nil, japanese: LuneSDK.LocaleFont? = nil, korean: LuneSDK.LocaleFont? = nil)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -593,14 +731,20 @@ extension LuneSDK.FontConfig {
   public init(data: Foundation.Data) throws
   public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
   public init(fromURL url: Foundation.URL) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   public func with(latin: LuneSDK.LocaleFont? = nil, arabic: LuneSDK.LocaleFont? = nil, greek: LuneSDK.LocaleFont? = nil, cyrillic: LuneSDK.LocaleFont? = nil, hebrew: LuneSDK.LocaleFont? = nil, chinese: LuneSDK.LocaleFont? = nil, japanese: LuneSDK.LocaleFont? = nil, korean: LuneSDK.LocaleFont? = nil) -> LuneSDK.FontConfig
+  #endif
   public func jsonData() throws -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+  #endif
 }
 @available(iOS 13.0, macOS 10.15, tvOS 13.0, watchOS 6.0, *)
 @propertyWrapper public struct PublishedObject<Value> {
   public init(wrappedValue: Value) where Value : Combine.ObservableObject, Value.ObjectWillChangePublisher == Combine.ObservableObjectPublisher
+  #if compiler(>=5.3) && $NonescapableTypes
   public init<V>(wrappedValue: V?) where Value == V?, V : Combine.ObservableObject, V.ObjectWillChangePublisher == Combine.ObservableObjectPublisher
+  #endif
   public var wrappedValue: Value {
     get
     set
@@ -674,9 +818,13 @@ extension LuneSDK.LuneTransaction {
   public init(data: Foundation.Data) throws
   public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
   public init(fromURL url: Foundation.URL) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   public func with(id: Swift.Int? = nil, transactionDate: Swift.String? = nil, userNote: Swift.String? = nil, globalTxID: Swift.String? = nil, rawDescription: Swift.String? = nil, categoryID: Swift.Int? = nil, brandName: Swift.String? = nil, brandLogo: Swift.String? = nil, currencyCode: Swift.String? = nil, amount: Swift.Double? = nil, roundedAmount: Swift.Double? = nil, isBrandValid: Swift.Bool? = nil, isLogoValid: Swift.Bool? = nil, userEditedBrandName: Swift.String? = nil, isCategoryValid: Swift.Bool? = nil, userEditedCategoryId: Swift.Int? = nil, userEditedCategoryName: Swift.String? = nil, tags: [Swift.String]? = nil, review: LuneSDK.Review? = nil, category: LuneSDK.Category? = nil, suggestedCategory: LuneSDK.Category? = nil) -> LuneSDK.LuneTransaction
+  #endif
   public func jsonData() throws -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+  #endif
 }
 public struct Review : Swift.Codable, Swift.Hashable {
   public static func == (a: LuneSDK.Review, b: LuneSDK.Review) -> Swift.Bool
@@ -703,15 +851,25 @@ public struct LuneInputViewContent<UITextFieldType> where UITextFieldType : Lune
   }
 }
 public class LuneSDKManager : Combine.ObservableObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(baseUrl: Swift.String = "http://20.174.36.8/api", token: Swift.String, localizationTableName: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func CategorySpendChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil) -> some SwiftUICore.View
   
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func CashflowChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil) -> some SwiftUICore.View
   
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func CategoryTrendChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil, excludeTransfers: Swift.Bool = false) -> some SwiftUICore.View
   
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func BrandTrendChartComponent(startDate: Swift.String? = nil, endDate: Swift.String? = nil, excludeTransfers: Swift.Bool = false) -> some SwiftUICore.View
   
+  #endif
   public func BrandListComponent() -> some SwiftUICore.View
   
   public func TransactionListComponent() -> some SwiftUICore.View
@@ -736,7 +894,9 @@ public class LuneSDKManager : Combine.ObservableObject {
   public func setUpSuccessNotifier(_ notifier: @escaping (Swift.String) -> Swift.Void)
   public func setUpErrorNotifier(_ notifier: @escaping (Swift.String) -> Swift.Void)
   public func setUpErrorLogger(_ logger: @escaping (LuneSDK.LuneError) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func setupRefreshCallback(_ callback: (() async -> Swift.String?)?)
+  #endif
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
@@ -749,24 +909,52 @@ extension LuneSDK.TransactionUpdate {
   public init(data: Foundation.Data) throws
   public init(_ json: Swift.String, using encoding: Swift.String.Encoding = .utf8) throws
   public init(fromURL url: Foundation.URL) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   public func with(id: Swift.Int?? = nil, isBrandValid: Swift.Bool?? = nil, isLogoValid: Swift.Bool?? = nil, userEditedBrandName: Swift.String?? = nil, isCategoryValid: Swift.Bool?? = nil, userEditedCategoryId: Swift.Int?? = nil, userEditedCategoryName: Swift.String?? = nil, note: Swift.String?? = nil, tags: [Swift.String]? = nil) -> LuneSDK.TransactionUpdate
+  #endif
   public func jsonData() throws -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
   public func jsonString(encoding: Swift.String.Encoding = .utf8) throws -> Swift.String?
+  #endif
   public func map() -> [Swift.String : Any]
 }
 extension LuneSDK.LuneField.Configuration {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func keyboardType(_ keyboardType: UIKit.UIKeyboardType?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func keyboardAppearance(_ keyboardAppearance: UIKit.UIKeyboardAppearance?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func returnKeyType(_ returnKeyType: UIKit.UIReturnKeyType?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func textContentType(_ textContentType: UIKit.UITextContentType?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func isSecureTextEntry(_ isSecureTextEntry: Swift.Bool?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func enablesReturnKeyAutomatically(_ enablesReturnKeyAutomatically: Swift.Bool?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func autocapitalizationType(_ autocapitalizationType: UIKit.UITextAutocapitalizationType?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func autocorrectionType(_ autocorrectionType: UIKit.UITextAutocorrectionType?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func spellCheckingType(_ spellCheckingType: UIKit.UITextSpellCheckingType?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func smartQuotesType(_ smartQuotesType: UIKit.UITextSmartQuotesType?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func smartDashesType(_ smartDashesType: UIKit.UITextSmartDashesType?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func smartInsertDeleteType(_ smartInsertDeleteType: UIKit.UITextSmartInsertDeleteType?) -> LuneSDK.LuneField<UITextFieldType>.Configuration
+  #endif
 }
 @_hasMissingDesignatedInitializers @objc public class LuneError : ObjectiveC.NSObject, Swift.Error {
   final public let message: Swift.String
