@@ -3,44 +3,51 @@
 All notable changes to `📦 LuneSDK` will be documented in this file.
 
 ---
-## 0.7.6 - 2026-3-18
+## 0.7.9 - 2026-06-22
 
-### [0.6.3](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.7.4...v0.7.8) (2026-3-18)
+### [0.7.9](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.7.8...v0.7.9) (2026-06-22)
 
-#### Fix: Scrolling issue in some views for newest iOS Version  
+#### Improved: PFM SDK Size Optimization
 
 ---
-## 0.7.4 - 2026-2-24
+## 0.7.8 - 2026-03-18
 
-### [0.6.3](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.7.1...v0.7.4) (2026-2-24)
+### [0.7.8](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.7.4...v0.7.8) (2026-03-18)
 
-#### Fix: Resolved SwiftUI Exclusivity memory in custom property wrappers 
+#### Fixed: Resolved scrolling issues in some views on the latest iOS version
+
+---
+## 0.7.4 - 2026-02-24
+
+### [0.7.4](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.7.1...v0.7.4) (2026-02-24)
+
+#### Fixed: Resolved SwiftUI exclusivity violations in custom property wrappers
 
 ---
 ## 0.7.1 - 2025-12-10
 
-### [0.6.3](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.7.0...v0.7.1) (2025-12-10)
+### [0.7.1](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.7.0...v0.7.1) (2025-12-10)
 
-#### Add category for default transaction title for Un-Enriched Transactions
+#### Added: Category support for default titles of unenriched transactions
 
 ---
 ## 0.6.9 - 2025-10-10
 
-### [0.6.3](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.6.7...v0.6.9) (2025-10-10)
+### [0.6.9](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.6.7...v0.6.9) (2025-10-10)
 
-#### Add Default transaction title for Un-Enriched Transactions
+#### Added: Default transaction title for Un-Enriched Transactions
 
 ---
 ## 0.6.7 - 2025-10-02
 
-### [0.6.3](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.6.6...v0.6.7) (2025-10-02)
+### [0.6.7](https://github.com/Lune-Technologies/lune-pfm-sdk-ios/compare/v0.6.6...v0.6.7) (2025-10-02)
 
-#### Fix amount view bug
+#### Fixed: amount view bug
 
 ---
-## 0.6.3 - 2024-09-26
+## 0.6.4 - 2024-09-26
 
-### [0.6.3](https://github.com/Lune-Technologies/LuneBank/compare/v0.6.2...v0.6.3) (2024-09-26)
+### [0.6.4](https://github.com/Lune-Technologies/LuneBank/compare/v0.6.2...v0.6.4) (2024-09-26)
 
 #### Bug Fixes
 
